@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #0dcb8b;
+  --color-dark: hsl(190, 22%, 7%);
+  --color-light: white;
+  --color-bg: #eaeff4;
+  --color-light-gray: ;
+  --color-dark-gray: ;
+  --font-serif: "roboto";
+  --font-sans: "playfair display";
+}
+
+body {
+  font-family: var(--font-serif);
+}
+
+aside svg {
+  @apply h-4 w-4;
+}
+
+.sidebar-tab {
+  @apply flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium  transition-colors hover:bg-slate-200/60 hover:text-slate-500;
+}
+
+.sidebar-active-tab {
+  @apply flex items-center gap-3 rounded-lg bg-accent/20 px-3 py-2.5 text-sm font-medium transition-colors text-slate-700;
+}
+
+.tags-button {
+  @apply px-4 py-1.5 rounded-full text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 hover:shadow-[inset_0_0_0_1px_var(--color-slate-300)] transition-all shrink-0;
+}
+
+.tags-active-button {
+  @apply px-4 py-1.5 rounded-full text-sm font-medium bg-slate-900 text-white transition-colors shrink-0;
+}
