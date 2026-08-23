@@ -1,6 +1,6 @@
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
-import Recipes from "./components/recipes";
+import Browse from "./components/browse";
 import SearchAndFilter from "./components/filter";
 import "./App.css";
 
@@ -11,7 +11,7 @@ function App() {
       <Sidebar />
       <main className="col-span-3 flex flex-col bg-bg sm:col-span-2 lg:col-span-3 xl:col-span-4">
         <SearchAndFilter />
-        <Recipes />
+        <Browse />
       </main>
     </div>
   );

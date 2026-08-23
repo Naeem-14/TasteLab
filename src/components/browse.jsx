@@ -1,38 +1,14 @@
-import recipes from "./data";
-import { clock, favorites } from "./icons";
+import { useState } from "react";
+import data from "./data";
+import { clock, favorites, favoritesFilled } from "./icons";
 
-export default function Recipes() {
+export default function Browse() {
+  const [recipes, setRecipes] = useState(data);
+
   return (
-    // <section className="mx-5 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-    //   {recipes.map((recipe) => (
-    //     <div
-    //       className="group overflow-hidden rounded-md bg-light shadow-sm"
-    //       key={recipe.id}
-    //     >
-    //       <div className="relative">
-    //         <img
-    //           src={recipe.image}
-    //           className="aspect-5/3 object-cover object-center"
-    //         />
-    //         <div className="absolute top-2 left-2 flex items-center gap-0.5 rounded-full border-t border-white bg-white/60 px-1 py-0.5 pr-2 text-sm text-slate-500 backdrop-blur-xs transition duration-200 group-hover:bg-white">
-    //           <span className="scale-75">{clock}</span>
-    //           <span>{recipe.time.totalMinutes} mins</span>
-    //         </div>
-    //       </div>
-
-    //       <div className="p-4">
-    //         <div className="mb-1 text-sm font-semibold text-slate-600">
-    //           {recipe.foodName}
-    //         </div>
-    //         <div className="text-xs text-slate-400">{recipe.madeByCreator}</div>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </section>
-
     <section className="mx-auto h-[calc(100vh-120px)] max-w-7xl scrollbar-thumb-dark overflow-y-auto px-4 sm:px-6 lg:px-8">
       {recipes && recipes.length > 0 ? (
-        <div className="grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="mb-8 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {recipes.map((recipe) => (
             <article
               key={recipe.id}
@@ -52,16 +28,16 @@ export default function Recipes() {
                   <span className="shrink-0 scale-75 text-slate-500">
                     {clock}
                   </span>
-                  <span>{recipe.time.totalMinutes} mins</span>
+                  <span>{recipe.time} mins</span>
                 </div>
               </div>
 
               {/* Content Body */}
               <div className="relative flex flex-1 flex-col justify-between p-4">
                 {/* add favorite */}
-                <div className="absolute -top-5 right-0 scale-75 rounded-full bg-bg p-2 text-slate-600 shadow-sm">
-                  {favorites}
-                </div>
+                <button className="absolute -top-5 right-1 scale-90 rounded-full bg-bg p-2 text-slate-600 shadow-sm">
+                  {recipe.isFavorite ? favoritesFilled : favorites}
+                </button>
 
                 <div>
                   <h3 className="line-clamp-1 text-sm font-bold text-slate-800 transition-colors group-hover:text-accent">
