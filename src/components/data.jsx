@@ -8,7 +8,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=1200",
-    category: "breakfast",
+    category: "Breakfast",
     ingredients: [
       "2 slices sourdough bread",
       "1 ripe avocado",
@@ -32,7 +32,7 @@ const data = [
     isFavorite: false,
     difficulty: "Easy",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "1.5 lbs sirloin steak, cut into cubes",
       "3 tbsp unsalted butter",
@@ -57,7 +57,7 @@ const data = [
     difficulty: "Medium",
     image:
       "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=1200",
-    category: "desserts",
+    category: "Desserts",
     ingredients: [
       "4 oz bittersweet chocolate",
       "1/2 cup unsalted butter",
@@ -82,7 +82,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1740885696809-722b11d505d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGljZWQlMjBtYXRjaGElMjBncmVlbiUyMHRlYSUyMGxhdHRlfGVufDB8MHwwfHx8Mg%3D%3D",
-    category: "drinks",
+    category: "Drinks",
     ingredients: [
       "1.5 tsp ceremonial grade matcha powder",
       "2 tbsp warm water",
@@ -106,7 +106,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1598214886806-c87b84b7078b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Qmx1ZWJlcnJ5JTIwUGFuY2FrZXN8ZW58MHwwfDB8fHwy",
-    category: "breakfast",
+    category: "Breakfast",
     ingredients: [
       "1.5 cups all-purpose flour",
       "3.5 tsp baking powder",
@@ -132,7 +132,7 @@ const data = [
     difficulty: "Medium",
     image:
       "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "2 large chicken breasts, halved lengthwise",
       "1 tbsp olive oil",
@@ -160,7 +160,7 @@ const data = [
     difficulty: "Medium",
     image:
       "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VGlyYW1pc3V8ZW58MHx8MHx8fDA%3D",
-    category: "desserts",
+    category: "Desserts",
     ingredients: [
       "6 egg yolks",
       "3/4 cup granulated sugar",
@@ -188,7 +188,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1654074517219-85e6f3f6f85d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U3RyYXdiZXJyeSUyME1pbnQlMjBNb2ppdG8lMjBNb2NrdGFpbHxlbnwwfHwwfHx8MA%3D%3D",
-    category: "drinks",
+    category: "Drinks",
     ingredients: [
       "4 fresh strawberries, hulled",
       "8 fresh mint leaves",
@@ -212,7 +212,7 @@ const data = [
     isFavorite: false,
     difficulty: "Medium",
     image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "4 large yellow onions, thinly sliced",
       "3 tbsp unsalted butter",
@@ -237,7 +237,7 @@ const data = [
     difficulty: "Hard",
     image:
       "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=1200",
-    category: "breakfast",
+    category: "Breakfast",
     ingredients: [
       "2 English muffins, split and toasted",
       "4 slices Canadian bacon",
@@ -262,7 +262,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1645839449196-62bde406052e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWFuZ28lMjBDb2NvbnV0JTIwU21vb3RoaWUlMjBCb3dsfGVufDB8MHwwfHx8Mg%3D%3D",
-    category: "breakfast",
+    category: "Breakfast",
     ingredients: [
       "2 cups frozen mango chunks",
       "1/2 cup coconut milk",
@@ -284,7 +284,7 @@ const data = [
     isFavorite: false,
     difficulty: "Easy",
     image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "1 lb rigatoni pasta",
       "2 tbsp olive oil",
@@ -311,7 +311,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "1 lb ground beef",
       "1 packet taco seasoning",
@@ -336,7 +336,7 @@ const data = [
     difficulty: "Medium",
     image:
       "https://images.unsplash.com/photo-1461009312844-e80697a81cc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnJvd25pZXN8ZW58MHwwfDB8fHwy",
-    category: "desserts",
+    category: "Desserts",
     ingredients: [
       "1/2 cup unsalted butter, melted",
       "1 cup granulated sugar",
@@ -362,7 +362,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=1200",
-    category: "drinks",
+    category: "Drinks",
     ingredients: [
       "2 shots espresso",
       "1 cup milk of choice",
@@ -385,7 +385,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "2 large cucumbers, chopped",
       "4 Roma tomatoes, chopped",
@@ -411,7 +411,7 @@ const data = [
     difficulty: "Hard",
     image:
       "https://images.unsplash.com/photo-1543508834-51a9bcc28a88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TGVtb24lMjBUYXJ0fGVufDB8MHwwfHx8Mg%3D%3D",
-    category: "desserts",
+    category: "Desserts",
     ingredients: [
       "1 pre-baked tart crust",
       "4 large eggs",
@@ -436,7 +436,7 @@ const data = [
     difficulty: "Medium",
     image:
       "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "1 lb pizza dough",
       "1/2 cup San Marzano tomato sauce",
@@ -459,7 +459,7 @@ const data = [
     isFavorite: false,
     difficulty: "Easy",
     image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1200",
-    category: "drinks",
+    category: "Drinks",
     ingredients: [
       "1 bottle white wine or Prosecco",
       "1/2 cup brandy",
@@ -482,7 +482,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=1200",
-    category: "breakfast",
+    category: "Breakfast",
     ingredients: [
       "4 slices thick brioche, cubed",
       "2 eggs",
@@ -507,7 +507,7 @@ const data = [
     difficulty: "Hard",
     image:
       "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "6 cups beef bone broth",
       "1 onion, charred",
@@ -533,7 +533,7 @@ const data = [
     difficulty: "Medium",
     image:
       "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=1200",
-    category: "desserts",
+    category: "Desserts",
     ingredients: [
       "1 cup heavy cream",
       "1/2 cup whole milk",
@@ -557,7 +557,7 @@ const data = [
     isFavorite: false,
     difficulty: "Easy",
     image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200",
-    category: "drinks",
+    category: "Drinks",
     ingredients: [
       "1 cup almond milk",
       "1 tsp ground turmeric",
@@ -581,7 +581,7 @@ const data = [
     difficulty: "Medium",
     image:
       "https://images.unsplash.com/photo-1590412200988-a436970781fa?w=1200",
-    category: "breakfast",
+    category: "Breakfast",
     ingredients: [
       "1 tbsp olive oil",
       "1/2 yellow onion, chopped",
@@ -608,7 +608,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "2 salmon fillets",
       "2 tbsp soy sauce",
@@ -632,7 +632,7 @@ const data = [
     difficulty: "Easy",
     image:
       "https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=1200",
-    category: "drinks",
+    category: "Drinks",
     ingredients: [
       "1/2 cup fresh lemon juice",
       "1/3 cup simple syrup",
@@ -655,7 +655,7 @@ const data = [
     difficulty: "Hard",
     image:
       "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200",
-    category: "desserts",
+    category: "Desserts",
     ingredients: [
       "4 egg whites",
       "1 cup caster sugar",
@@ -679,7 +679,7 @@ const data = [
     isFavorite: false,
     difficulty: "Easy",
     image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=1200",
-    category: "main",
+    category: "Main",
     ingredients: [
       "1 head Romaine lettuce, chopped",
       "1/2 cup Caesar dressing",
