@@ -1,15 +1,21 @@
-import { useState } from "react";
-import data from "./data";
 import { clock, favorites, favoritesFilled } from "./icons";
 
-export default function Browse() {
-  const [recipes, setRecipes] = useState(data);
+export default function Browse({ recipes, setRecipes }) {
+  function addFavorite(indexToFavorite) {
+    setRecipes(
+      recipes.map((recipe, index) =>
+        index === indexToFavorite
+          ? { ...recipe, isFavorite: !recipe.isFavorite }
+          : recipe,
+      ),
+    );
+  }
 
   return (
     <section className="mx-auto h-[calc(100vh-120px)] max-w-7xl scrollbar-thumb-dark overflow-y-auto px-4 sm:px-6 lg:px-8">
       {recipes && recipes.length > 0 ? (
         <div className="mb-8 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {recipes.map((recipe) => (
+          {recipes.map((recipe, index) => (
             <article
               key={recipe.id}
               className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-slate-300"
@@ -35,7 +41,10 @@ export default function Browse() {
               {/* Content Body */}
               <div className="relative flex flex-1 flex-col justify-between p-4">
                 {/* add favorite */}
-                <button className="absolute -top-5 right-1 scale-90 rounded-full bg-bg p-2 text-slate-600 shadow-sm">
+                <button
+                  className="absolute -top-5 right-1 scale-90 rounded-full bg-bg p-2 text-slate-600 shadow-sm"
+                  onClick={() => addFavorite(index)}
+                >
                   {recipe.isFavorite ? favoritesFilled : favorites}
                 </button>
 
