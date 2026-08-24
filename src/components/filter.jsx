@@ -41,7 +41,7 @@ export default function SearchAndFilter({ setRecipes }) {
         />
       </div>
 
-      <div className="flex w-full scrollbar-none items-center gap-1.5 overflow-x-auto pb-1 sm:w-auto sm:pb-0">
+      <div className="flex w-full scrollbar-none items-center gap-1.5 overflow-x-auto rounded-full pb-1 sm:w-auto sm:pb-0">
         {tags.map((tag) => (
           <button
             key={tag}
