@@ -1,6 +1,7 @@
-export default function AddRecipeOverview() {
+export default function AddRecipeOverview({ recipeDetails, setRecipeDetails }) {
   return (
     <div className="flex flex-col gap-3">
+      {/* time */}
       <div className="flex flex-col gap-1.5">
         <label htmlFor="time" className="text-sm font-semibold text-slate-700">
           Time (minutes)
@@ -10,9 +11,13 @@ export default function AddRecipeOverview() {
           id="time"
           placeholder="Preparation time in minutes"
           className="add-recipe-number-input"
+          onChange={(e) =>
+            setRecipeDetails({ ...recipeDetails, time: e.target.value })
+          }
         />
       </div>
 
+      {/* category */}
       <div className="flex flex-col gap-2.5">
         <span className="text-sm font-semibold text-slate-700">Category</span>
 
@@ -25,6 +30,9 @@ export default function AddRecipeOverview() {
               value="breakfast"
               name="category"
               className="h-4 w-4 cursor-pointer accent-accent"
+              onChange={(e) =>
+                setRecipeDetails({ ...recipeDetails, category: e.target.value })
+              }
             />
             <span>Breakfast</span>
           </label>
@@ -37,6 +45,9 @@ export default function AddRecipeOverview() {
               value="main"
               name="category"
               className="h-4 w-4 cursor-pointer accent-accent"
+              onChange={(e) =>
+                setRecipeDetails({ ...recipeDetails, category: e.target.value })
+              }
             />
             <span>Main</span>
           </label>
@@ -49,6 +60,9 @@ export default function AddRecipeOverview() {
               value="desserts"
               name="category"
               className="h-4 w-4 cursor-pointer accent-accent"
+              onChange={(e) =>
+                setRecipeDetails({ ...recipeDetails, category: e.target.value })
+              }
             />
             <span>Desserts</span>
           </label>
@@ -61,6 +75,9 @@ export default function AddRecipeOverview() {
               value="drinks"
               name="category"
               className="h-4 w-4 cursor-pointer accent-accent"
+              onChange={(e) =>
+                setRecipeDetails({ ...recipeDetails, category: e.target.value })
+              }
             />
             <span>Drinks</span>
           </label>

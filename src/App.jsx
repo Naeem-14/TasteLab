@@ -1,14 +1,13 @@
-// import { useState } from "react";
+import { useState } from "react";
 
-// import Header from "./components/header";
-// import Sidebar from "./components/sidebar";
-// import Browse from "./components/browse";
-// import SearchAndFilter from "./components/filter";
+import Header from "./components/header";
+import Sidebar from "./components/sidebar";
+import Browse from "./components/browse";
+import SearchAndFilter from "./components/filter";
 
 import AddRecipe from "./components/add-recipe";
-// import AddRecipe from "./components/add-recipe-demo";
 
-// import data from "./components/data";
+import data from "./components/data";
 
 import "./App.css";
 

@@ -1,4 +1,4 @@
-export default function AddRecipeNames() {
+export default function AddRecipeNames({ setRecipeDetails, recipeDetails }) {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-col gap-1.5">
@@ -13,6 +13,9 @@ export default function AddRecipeNames() {
           id="foodName"
           placeholder="e.g., Spicy Pepperoni Pizza"
           className="add-recipe-text-input"
+          onChange={(e) =>
+            setRecipeDetails({ ...recipeDetails, foodName: e.target.value })
+          }
         />
       </div>
 
@@ -28,6 +31,12 @@ export default function AddRecipeNames() {
           id="creatorName"
           placeholder="e.g., Gordon Ramsay"
           className="add-recipe-text-input"
+          onChange={(e) =>
+            setRecipeDetails({
+              ...recipeDetails,
+              madeByCreator: e.target.value,
+            })
+          }
         />
       </div>
     </div>
