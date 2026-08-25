@@ -12,7 +12,7 @@ export default function Browse({ filteredRecipes, setFilteredRecipes }) {
   }
 
   return (
-    <section className="mx-auto h-[calc(100vh-120px)] max-w-7xl scrollbar-thumb-dark overflow-y-auto px-4 pt-2 sm:px-6 lg:px-8">
+    <section className="mx-auto h-[calc(100vh-120px)] scrollbar-thumb-dark overflow-y-auto px-4 pt-2">
       {filteredRecipes && filteredRecipes.length > 0 ? (
         <div className="mb-8 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredRecipes.map((recipe, index) => (
