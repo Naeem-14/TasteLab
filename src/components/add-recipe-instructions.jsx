@@ -1,4 +1,19 @@
-export default function AddRecipeInstructions() {
+import { useState } from "react";
+
+export default function AddRecipeInstructions({
+  recipeDetails,
+  setRecipeDetails,
+}) {
+  const [currentInstruction, setCurrentInstruction] = useState("");
+
+  function addInstructionInRecipe() {
+    setRecipeDetails({
+      ...recipeDetails,
+      instructions: [...recipeDetails.instructions, currentInstruction],
+    });
+    setCurrentInstruction("");
+  }
+
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between border-b border-slate-100 pb-2">
@@ -11,16 +26,22 @@ export default function AddRecipeInstructions() {
           rows={2}
           placeholder="Add a step (e.g. Sift together flour and baking powder...)"
           className="w-full resize-none rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-800 transition duration-150 outline-none placeholder:text-slate-400 hover:border-slate-400 focus:border-accent focus:ring-2 focus:ring-accent/20"
+          value={currentInstruction}
+          onChange={(e) => setCurrentInstruction(e.target.value)}
         />
 
-        <button className="rounded-lg bg-slate-800 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-slate-800/95 active:scale-[0.98]">
+        <button
+          className="rounded-lg bg-slate-800 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-slate-800/95 active:scale-[0.98]"
+          onClick={addInstructionInRecipe}
+          type="button"
+        >
           Add Instruction Step
         </button>
       </div>
 
       {/* Instructions Ordered List */}
       <ol className="flex flex-col gap-2.5">
-        <li className="group flex items-start gap-3 rounded-lg border border-slate-200 bg-slate-50/50 p-3.5 text-sm text-slate-700 transition hover:border-slate-300 hover:bg-white hover:shadow-xs">
+        <li className="flex items-start gap-3 rounded-lg border border-slate-200 bg-slate-50/50 p-3.5 text-sm text-slate-700 transition hover:border-slate-300 hover:bg-white hover:shadow-xs">
           <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xs font-semibold text-accent">
             1
           </span>
@@ -28,7 +49,7 @@ export default function AddRecipeInstructions() {
             Sift together flour, baking powder, salt, and sugar in a large bowl.
           </p>
           <button
-            className="text-slate-400 opacity-0 transition-all group-hover:opacity-100 hover:text-red-500"
+            className="text-slate-400 transition-all hover:text-red-500"
             title="Delete step"
           >
             <svg

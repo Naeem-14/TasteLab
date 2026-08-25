@@ -15,7 +15,7 @@ const data = [
       { quantity: 2, unit: "large", name: "eggs" },
       { quantity: 1, unit: "tbsp", name: "white vinegar" },
       { quantity: 0.25, unit: "tsp", name: "red pepper flakes" },
-      { quantity: null, unit: "", name: "Salt and black pepper to taste" },
+      { quantity: 0, unit: "", name: "Salt and black pepper to taste" },
     ],
     instructions: [
       "Toast sourdough slices until golden brown.",
@@ -39,7 +39,7 @@ const data = [
       { quantity: 4, unit: "cloves", name: "garlic, minced" },
       { quantity: 1, unit: "tbsp", name: "olive oil" },
       { quantity: 1, unit: "tbsp", name: "fresh parsley, chopped" },
-      { quantity: null, unit: "", name: "Salt and cracked pepper" },
+      { quantity: 0, unit: "", name: "Salt and cracked pepper" },
     ],
     instructions: [
       "Season steak cubes generously with salt and pepper.",
@@ -174,7 +174,7 @@ const data = [
       { quantity: 1, unit: "cup", name: "espresso, cooled" },
       { quantity: 1, unit: "pack", name: "ladyfingers" },
       {
-        quantity: null,
+        quantity: 0,
         unit: "",
         name: "Unsweetened cocoa powder for dusting",
       },
@@ -203,7 +203,7 @@ const data = [
       { quantity: 1, unit: "tbsp", name: "lime juice" },
       { quantity: 1, unit: "tbsp", name: "simple syrup" },
       { quantity: 1, unit: "cup", name: "sparkling water or club soda" },
-      { quantity: null, unit: "", name: "Crushed ice" },
+      { quantity: 0, unit: "", name: "Crushed ice" },
     ],
     instructions: [
       "Muddle strawberries, mint leaves, and lime juice in a tall glass.",
@@ -449,7 +449,7 @@ const data = [
       { quantity: 1, unit: "lb", name: "pizza dough" },
       { quantity: 0.5, unit: "cup", name: "San Marzano tomato sauce" },
       { quantity: 8, unit: "oz", name: "fresh mozzarella, sliced" },
-      { quantity: null, unit: "", name: "Fresh basil leaves" },
+      { quantity: 0, unit: "", name: "Fresh basil leaves" },
       { quantity: 1, unit: "tbsp", name: "extra virgin olive oil" },
     ],
     instructions: [
@@ -501,7 +501,7 @@ const data = [
       { quantity: 0.25, unit: "cup", name: "milk" },
       { quantity: 1, unit: "tsp", name: "cinnamon" },
       { quantity: 2, unit: "tbsp", name: "butter" },
-      { quantity: null, unit: "", name: "Maple syrup for dipping" },
+      { quantity: 0, unit: "", name: "Maple syrup for dipping" },
     ],
     instructions: [
       "Whisk eggs, milk, and cinnamon together in a bowl.",
@@ -527,7 +527,7 @@ const data = [
       { quantity: 2, unit: "pods", name: "star anise" },
       { quantity: 8, unit: "oz", name: "rice noodles" },
       { quantity: 0.5, unit: "lb", name: "thinly sliced sirloin" },
-      { quantity: null, unit: "", name: "Fresh herbs (cilantro, basil, mint)" },
+      { quantity: 0, unit: "", name: "Fresh herbs (cilantro, basil, mint)" },
     ],
     instructions: [
       "Simmer bone broth with charred onion, ginger, and star anise for 1 hour.",
@@ -650,7 +650,7 @@ const data = [
       { quantity: 0.33, unit: "cup", name: "simple syrup" },
       { quantity: 2, unit: "cups", name: "ice cubes" },
       { quantity: 0.5, unit: "cup", name: "water" },
-      { quantity: null, unit: "", name: "Lemon slices for garnish" },
+      { quantity: 0, unit: "", name: "Lemon slices for garnish" },
     ],
     instructions: [
       "Add lemon juice, simple syrup, water, and ice cubes to a blender.",
@@ -697,7 +697,7 @@ const data = [
       { quantity: 0.5, unit: "cup", name: "Caesar dressing" },
       { quantity: 0.5, unit: "cup", name: "croutons" },
       { quantity: 0.33, unit: "cup", name: "grated Parmesan cheese" },
-      { quantity: null, unit: "", name: "Cracked black pepper" },
+      { quantity: 0, unit: "", name: "Cracked black pepper" },
     ],
     instructions: [
       "Toss chopped Romaine lettuce in a large salad bowl with Caesar dressing.",
@@ -751,7 +751,7 @@ const data = [
       { quantity: 1, unit: "tbsp", name: "honey or agave syrup" },
       { quantity: 0.25, unit: "cup", name: "fresh blackberries" },
       { quantity: 1, unit: "tbsp", name: "fresh lime juice" },
-      { quantity: null, unit: "", name: "Ice cubes" },
+      { quantity: 0, unit: "", name: "Ice cubes" },
     ],
     instructions: [
       "Steep hibiscus tea bags in boiling water for 5 minutes, then cool.",
@@ -777,7 +777,7 @@ const data = [
       { quantity: 0.5, unit: "cup", name: "water" },
       { quantity: 0.25, unit: "tsp", name: "salt" },
       { quantity: 2, unit: "tbsp", name: "melted butter" },
-      { quantity: null, unit: "", name: "Nutella or fresh fruit for serving" },
+      { quantity: 0, unit: "", name: "Nutella or fresh fruit for serving" },
     ],
     instructions: [
       "Whisk flour, eggs, milk, water, salt, and melted butter together until completely smooth.",
@@ -808,7 +808,7 @@ const data = [
       { quantity: 1, unit: "clove", name: "garlic, minced" },
       { quantity: 1, unit: "tsp", name: "cornstarch mixed with 1 tbsp water" },
       { quantity: 2, unit: "cups", name: "cooked jasmine rice" },
-      { quantity: null, unit: "", name: "Steamed broccoli florets" },
+      { quantity: 0, unit: "", name: "Steamed broccoli florets" },
     ],
     instructions: [
       "Pan-sear chicken thighs in a skillet over high heat until browned and cooked through; chop into bites.",
@@ -860,8 +860,8 @@ const data = [
       { quantity: 1, unit: "oz", name: "coffee liqueur" },
       { quantity: 1, unit: "oz", name: "fresh hot espresso" },
       { quantity: 0.5, unit: "oz", name: "simple syrup" },
-      { quantity: null, unit: "", name: "Whole coffee beans for garnish" },
-      { quantity: null, unit: "", name: "Ice cubes" },
+      { quantity: 0, unit: "", name: "Whole coffee beans for garnish" },
+      { quantity: 0, unit: "", name: "Ice cubes" },
     ],
     instructions: [
       "Brew 1 shot of hot, fresh espresso.",
@@ -910,7 +910,7 @@ const data = [
       { quantity: 2, unit: "tbsp", name: "olive oil" },
       { quantity: 2, unit: "tbsp", name: "butter" },
       { quantity: 1, unit: "", name: "lemon, sliced" },
-      { quantity: null, unit: "", name: "Salt and pepper to taste" },
+      { quantity: 0, unit: "", name: "Salt and pepper to taste" },
     ],
     instructions: [
       "Pat salmon skin dry and season both sides with salt and pepper.",
@@ -935,7 +935,7 @@ const data = [
       { quantity: 2, unit: "", name: "eggs, separated" },
       { quantity: 1.5, unit: "cups", name: "milk" },
       { quantity: 0.5, unit: "cup", name: "melted butter" },
-      { quantity: null, unit: "", name: "Maple syrup and butter for serving" },
+      { quantity: 0, unit: "", name: "Maple syrup and butter for serving" },
     ],
     instructions: [
       "Mix flour, sugar, baking powder, egg yolks, milk, and melted butter into a batter.",
@@ -1009,7 +1009,7 @@ const data = [
       { quantity: 2, unit: "slices", name: "ripe tomato" },
       { quantity: 1, unit: "leaf", name: "butter lettuce" },
       { quantity: 2, unit: "tbsp", name: "burger sauce" },
-      { quantity: null, unit: "", name: "Salt and pepper" },
+      { quantity: 0, unit: "", name: "Salt and pepper" },
     ],
     instructions: [
       "Form beef into a patty and season generously with salt and pepper.",
@@ -1060,7 +1060,7 @@ const data = [
       { quantity: 2, unit: "tbsp", name: "pumpkin puree" },
       { quantity: 1, unit: "tbsp", name: "maple syrup" },
       { quantity: 0.5, unit: "tsp", name: "pumpkin pie spice" },
-      { quantity: null, unit: "", name: "Whipped cream for topping" },
+      { quantity: 0, unit: "", name: "Whipped cream for topping" },
     ],
     instructions: [
       "Whisk milk, pumpkin puree, maple syrup, and spice in a saucepan over medium heat until warm.",
@@ -1159,7 +1159,7 @@ const data = [
       { quantity: 1, unit: "tbsp", name: "butter" },
       { quantity: 2, unit: "tbsp", name: "fresh chives, finely chopped" },
       { quantity: 0.25, unit: "cup", name: "shredded Gruyère cheese" },
-      { quantity: null, unit: "", name: "Salt and white pepper" },
+      { quantity: 0, unit: "", name: "Salt and white pepper" },
     ],
     instructions: [
       "Whisk eggs vigorously with salt and pepper until frothy.",
@@ -1183,8 +1183,8 @@ const data = [
       { quantity: 1, unit: "cup", name: "brewed green tea, chilled" },
       { quantity: 0.5, unit: "cup", name: "fresh lemonade" },
       { quantity: 1, unit: "tbsp", name: "simple syrup" },
-      { quantity: null, unit: "", name: "Mint leaves for garnish" },
-      { quantity: null, unit: "", name: "Ice cubes" },
+      { quantity: 0, unit: "", name: "Mint leaves for garnish" },
+      { quantity: 0, unit: "", name: "Ice cubes" },
     ],
     instructions: [
       "Fill a tall glass to the top with ice cubes.",
@@ -1237,7 +1237,7 @@ const data = [
       { quantity: 1, unit: "tbsp", name: "lime juice" },
       { quantity: 1, unit: "cup", name: "sparkling water" },
       { quantity: 1, unit: "tbsp", name: "simple syrup" },
-      { quantity: null, unit: "", name: "Ice cubes" },
+      { quantity: 0, unit: "", name: "Ice cubes" },
     ],
     instructions: [
       "Muddle mint leaves and lime juice at the bottom of a tall glass.",
