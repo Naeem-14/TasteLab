@@ -4,8 +4,9 @@ const data = [
     foodName: "Avocado Toast with Poached Egg",
     madeByCreator: "Chef Elena Rostova",
     time: 15,
-    isFavorite: true,
+    isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=1200",
     category: "Breakfast",
@@ -31,6 +32,7 @@ const data = [
     time: 25,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200",
     category: "Main",
     ingredients: [
@@ -55,6 +57,7 @@ const data = [
     time: 27,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=1200",
     category: "Desserts",
@@ -80,6 +83,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1740885696809-722b11d505d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGljZWQlMjBtYXRjaGElMjBncmVlbiUyMHRlYSUyMGxhdHRlfGVufDB8MHwwfHx8Mg%3D%3D",
     category: "Drinks",
@@ -104,6 +108,7 @@ const data = [
     time: 25,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1598214886806-c87b84b7078b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Qmx1ZWJlcnJ5JTIwUGFuY2FrZXN8ZW58MHwwfDB8fHwy",
     category: "Breakfast",
@@ -130,6 +135,7 @@ const data = [
     time: 30,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=1200",
     category: "Main",
@@ -162,6 +168,7 @@ const data = [
     time: 25,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VGlyYW1pc3V8ZW58MHx8MHx8fDA%3D",
     category: "Desserts",
@@ -194,6 +201,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1654074517219-85e6f3f6f85d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U3RyYXdiZXJyeSUyME1pbnQlMjBNb2ppdG8lMjBNb2NrdGFpbHxlbnwwfHwwfHx8MA%3D%3D",
     category: "Drinks",
@@ -219,6 +227,7 @@ const data = [
     time: 60,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200",
     category: "Main",
     ingredients: [
@@ -243,6 +252,7 @@ const data = [
     time: 25,
     isFavorite: false,
     difficulty: "Hard",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=1200",
     category: "Breakfast",
@@ -268,6 +278,7 @@ const data = [
     time: 10,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1645839449196-62bde406052e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWFuZ28lMjBDb2NvbnV0JTIwU21vb3RoaWUlMjBCb3dsfGVufDB8MHwwfHx8Mg%3D%3D",
     category: "Breakfast",
@@ -291,6 +302,7 @@ const data = [
     time: 25,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=1200",
     category: "Main",
     ingredients: [
@@ -317,6 +329,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200",
     category: "Main",
@@ -342,6 +355,7 @@ const data = [
     time: 40,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1461009312844-e80697a81cc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnJvd25pZXN8ZW58MHwwfDB8fHwy",
     category: "Desserts",
@@ -368,6 +382,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=1200",
     category: "Drinks",
@@ -391,6 +406,7 @@ const data = [
     time: 15,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1200",
     category: "Main",
@@ -417,6 +433,7 @@ const data = [
     time: 50,
     isFavorite: false,
     difficulty: "Hard",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1543508834-51a9bcc28a88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TGVtb24lMjBUYXJ0fGVufDB8MHwwfHx8Mg%3D%3D",
     category: "Desserts",
@@ -442,6 +459,7 @@ const data = [
     time: 30,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200",
     category: "Main",
@@ -466,6 +484,7 @@ const data = [
     time: 10,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1200",
     category: "Drinks",
     ingredients: [
@@ -492,6 +511,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=1200",
     category: "Breakfast",
@@ -517,6 +537,7 @@ const data = [
     time: 90,
     isFavorite: false,
     difficulty: "Hard",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=1200",
     category: "Main",
@@ -543,6 +564,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=1200",
     category: "Desserts",
@@ -568,6 +590,7 @@ const data = [
     time: 8,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200",
     category: "Drinks",
     ingredients: [
@@ -591,6 +614,7 @@ const data = [
     time: 30,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1590412200988-a436970781fa?w=1200",
     category: "Breakfast",
@@ -618,6 +642,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=1200",
     category: "Main",
@@ -642,6 +667,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=1200",
     category: "Drinks",
@@ -665,6 +691,7 @@ const data = [
     time: 90,
     isFavorite: false,
     difficulty: "Hard",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200",
     category: "Desserts",
@@ -690,6 +717,7 @@ const data = [
     time: 15,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=1200",
     category: "Main",
     ingredients: [
@@ -712,6 +740,7 @@ const data = [
     time: 45,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?w=1200",
     category: "Main",
@@ -742,6 +771,7 @@ const data = [
     time: 10,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=1200",
     category: "Drinks",
     ingredients: [
@@ -767,6 +797,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=1200",
     category: "Breakfast",
@@ -794,6 +825,7 @@ const data = [
     time: 25,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200",
     category: "Main",
     ingredients: [
@@ -824,6 +856,7 @@ const data = [
     time: 120,
     isFavorite: false,
     difficulty: "Hard",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200",
     category: "Breakfast",
@@ -853,6 +886,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1545438102-799c3991ffb2?w=1200",
     category: "Drinks",
     ingredients: [
@@ -878,6 +912,7 @@ const data = [
     time: 10,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=1200",
     category: "Desserts",
     ingredients: [
@@ -901,6 +936,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=1200",
     category: "Main",
@@ -926,6 +962,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=1200",
     category: "Breakfast",
     ingredients: [
@@ -951,6 +988,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=1200",
     category: "Drinks",
     ingredients: [
@@ -973,6 +1011,7 @@ const data = [
     time: 35,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1200",
     category: "Desserts",
@@ -999,6 +1038,7 @@ const data = [
     time: 20,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200",
     category: "Main",
@@ -1025,6 +1065,7 @@ const data = [
     time: 30,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1589119908995-c6837fa14848?w=1200",
     category: "Breakfast",
@@ -1051,6 +1092,7 @@ const data = [
     time: 10,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=1200",
     category: "Drinks",
@@ -1076,6 +1118,7 @@ const data = [
     time: 25,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1200",
     category: "Desserts",
@@ -1100,6 +1143,7 @@ const data = [
     time: 30,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=1200",
     category: "Main",
     ingredients: [
@@ -1127,6 +1171,7 @@ const data = [
     time: 45,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=1200",
     category: "Desserts",
@@ -1151,6 +1196,7 @@ const data = [
     time: 10,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=1200",
     category: "Breakfast",
@@ -1176,6 +1222,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=1200",
     category: "Drinks",
@@ -1200,6 +1247,7 @@ const data = [
     time: 30,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200",
     category: "Main",
     ingredients: [
@@ -1228,6 +1276,7 @@ const data = [
     time: 5,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=1200",
     category: "Drinks",
@@ -1252,6 +1301,7 @@ const data = [
     time: 75,
     isFavorite: false,
     difficulty: "Hard",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=1200",
     category: "Desserts",
@@ -1278,6 +1328,7 @@ const data = [
     time: 50,
     isFavorite: false,
     difficulty: "Medium",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=1200",
     category: "Desserts",
@@ -1304,6 +1355,7 @@ const data = [
     time: 15,
     isFavorite: false,
     difficulty: "Easy",
+    origin: "in-built",
     image:
       "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=1200",
     category: "Breakfast",

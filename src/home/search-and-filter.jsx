@@ -1,24 +1,23 @@
-import { search } from "./icons";
+import { search } from "../data/icons";
 import { useState } from "react";
-import data from "./data";
 
-export default function SearchAndFilter({ setRecipes }) {
+export default function SearchAndFilter({ recipes, setFilteredRecipes }) {
   const [activeTag, setActiveTag] = useState("All");
   const tags = ["All", "Breakfast", "Main", "Desserts", "Drinks"];
 
   function filterRecipes(tag) {
     if (tag === "All") {
-      setRecipes(data);
+      setFilteredRecipes(recipes);
     } else {
-      setRecipes(data.filter((recipe) => recipe.category === tag));
+      setFilteredRecipes(recipes.filter((recipe) => recipe.category === tag));
     }
   }
 
   function searchRecipes(e) {
     const search = e.target.value;
 
-    setRecipes(
-      data.filter(
+    setFilteredRecipes(
+      recipes.filter(
         (recipe) =>
           recipe.foodName.toLowerCase().includes(search) ||
           recipe.madeByCreator.toLocaleLowerCase().includes(search),

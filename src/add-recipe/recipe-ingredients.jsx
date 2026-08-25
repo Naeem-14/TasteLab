@@ -1,4 +1,5 @@
 import { useState } from "react";
+import IngredientsList from "./ingredients-list";
 
 export default function AddRecipeIngredients({
   recipeDetails,
@@ -8,7 +9,7 @@ export default function AddRecipeIngredients({
   const [currentIngredient, setCurrentIngredient] = useState({
     name: "",
     quantity: "",
-    unit: "none",
+    unit: "",
   });
 
   function addIngredientInRecipe() {
@@ -80,7 +81,7 @@ export default function AddRecipeIngredients({
               });
             }}
           >
-            <option value="none">none</option>
+            <option value="">none</option>
             <option value="cup">cup</option>
             <option value="ml">ml</option>
             <option value="liter">liter</option>
@@ -97,6 +98,7 @@ export default function AddRecipeIngredients({
           className="flex items-center justify-center gap-1.5 rounded-lg border border-dashed border-accent/60 bg-accent/5 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/10 active:scale-[0.99]"
           onClick={addIngredientInRecipe}
           type="button"
+          disabled={currentIngredient.name.length < 1}
         >
           <svg
             className="h-4 w-4"
@@ -116,35 +118,10 @@ export default function AddRecipeIngredients({
       </div>
 
       {/* Ingredients List (Preview) */}
-      <ul className="mt-1 flex flex-col gap-2">
-        <li className="flex items-center justify-between rounded-lg border border-slate-100 bg-slate-50 px-3.5 py-2 text-sm text-slate-700">
-          <span>
-            <strong className="mr-2 font-semibold text-slate-900">
-              2 cups
-            </strong>{" "}
-            All-purpose flour
-          </span>
-          <button
-            className="text-slate-400 transition-colors hover:text-red-500"
-            title="Remove ingredient"
-            type="button"
-          >
-            <svg
-              className="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </li>
-      </ul>
+      <IngredientsList
+        recipeDetails={recipeDetails}
+        setRecipeDetails={setRecipeDetails}
+      />
     </div>
   );
 }

@@ -1,22 +1,22 @@
 import {
   home,
-  about,
-  contact,
+  cooking101,
   own,
   favorites,
   add,
   user,
   logOut,
-} from "./icons";
+  filter,
+} from "./data/icons";
 
 export default function Sidebar() {
   return (
-    <aside className="hidden sm:flex h-[calc(100vh-48px)] flex-col justify-between  bg-light px-4 py-6 text-slate-400 col-span-1">
+    <aside className="col-span-1 hidden h-[calc(100vh-48px)] flex-col justify-between bg-light px-4 py-6 text-slate-400 sm:flex">
       {/* Navigation Sections */}
       <section className="space-y-6">
         {/* Main Menu */}
         <div>
-          <p className="mb-2 px-3 text-xs font-semibold uppercase text-slate-600 tracking-wider ">
+          <p className="mb-2 px-3 text-xs font-semibold tracking-wider text-slate-600 uppercase">
             Menu
           </p>
           <nav className="space-y-1">
@@ -26,19 +26,19 @@ export default function Sidebar() {
             </a>
 
             <a href="#" className="sidebar-tab">
-              {about}
-              <span>About</span>
+              {filter}
+              <span>Filter</span>
             </a>
 
             <a href="#" className="sidebar-tab">
-              {contact}
-              <span>Contact</span>
+              {cooking101}
+              <span>Cooking 101</span>
             </a>
           </nav>
         </div>
 
         <div>
-          <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-600">
+          <p className="mb-2 px-3 text-xs font-semibold tracking-wider text-slate-600 uppercase">
             My Kitchen
           </p>
           <nav className="space-y-1">
@@ -70,7 +70,7 @@ export default function Sidebar() {
       <section className="border-t border-slate-200/80 pt-4">
         <div className="flex items-center gap-3 rounded-lg p-2">
           {/* Avatar Icon */}
-          <div className="flex scale-125 shrink-0 items-center justify-center">
+          <div className="flex shrink-0 scale-125 items-center justify-center">
             {user}
           </div>
 

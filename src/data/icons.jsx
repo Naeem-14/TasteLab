@@ -73,43 +73,6 @@ export const home = (
   </svg>
 );
 
-export const about = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="lucide lucide-info-icon lucide-info"
-  >
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 16v-4" />
-    <path d="M12 8h.01" />
-  </svg>
-);
-
-export const contact = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="lucide lucide-mail-icon lucide-mail"
-  >
-    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-    <rect x="2" y="4" width="20" height="16" rx="2" />
-  </svg>
-);
-
 export const own = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +119,7 @@ export const favorites = (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="lucide lucide-heart-icon lucide-heart text-slate-600"
+    className="lucide lucide-heart-icon lucide-heart"
   >
     <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
   </svg>
@@ -233,5 +196,41 @@ export const logOut = (
     <path d="m16 17 5-5-5-5" />
     <path d="M21 12H9" />
     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+  </svg>
+);
+
+export const filter = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-funnel-icon lucide-funnel"
+  >
+    <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" />
+  </svg>
+);
+
+export const cooking101 = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-book-text-icon lucide-book-text"
+  >
+    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+    <path d="M8 11h8" />
+    <path d="M8 7h6" />
   </svg>
 );

@@ -1,9 +1,9 @@
-import { clock, favorites, favoritesFilled } from "./icons";
+import { clock, favorites, favoritesFilled } from "../data/icons";
 
-export default function Browse({ recipes, setRecipes }) {
+export default function Browse({ filteredRecipes, setFilteredRecipes }) {
   function addFavorite(indexToFavorite) {
-    setRecipes(
-      recipes.map((recipe, index) =>
+    setFilteredRecipes(
+      filteredRecipes.map((recipe, index) =>
         index === indexToFavorite
           ? { ...recipe, isFavorite: !recipe.isFavorite }
           : recipe,
@@ -13,9 +13,9 @@ export default function Browse({ recipes, setRecipes }) {
 
   return (
     <section className="mx-auto h-[calc(100vh-120px)] max-w-7xl scrollbar-thumb-dark overflow-y-auto px-4 pt-2 sm:px-6 lg:px-8">
-      {recipes && recipes.length > 0 ? (
+      {filteredRecipes && filteredRecipes.length > 0 ? (
         <div className="mb-8 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {recipes.map((recipe, index) => (
+          {filteredRecipes.map((recipe, index) => (
             <article
               key={recipe.id}
               className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-slate-300"

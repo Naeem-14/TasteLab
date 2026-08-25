@@ -1,0 +1,46 @@
+Here is a complete summary of everything discussed for your new sidebar feature:
+
+**Sidebar Placement & Architecture**
+You are adding **Kitchen Basics** to the **MENU** section of your sidebar to bridge the gap between finding a recipe and executing it, replacing non-essential pages like About or Contact.
+
+```text
+MENU
+  ├── Home
+  ├── Filter
+  └── Kitchen Basics
+
+MY KITCHEN
+  ├── Favorites
+  └── Own
+
+```
+
+---
+
+**UI/UX Design Concept**
+
+* **Structure:** Clicking "Kitchen Basics" opens a hub organized into **3 primary categories**.
+* **Layout:** Inside each category, content is presented as clickable **cards** (featuring a title, brief summary, and icon/preview).
+* **Navigation:** Clicking any card opens its full, dedicated page or detailed guide.
+
+---
+
+**Category & Card Content Breakdown**
+
+**1. Essential Calculators & Charts**
+
+* **Measurement & Temperature Converter:** Interactive tool to convert metric/imperial units (grams to cups, °C to °F) and volume to weight.
+* **Cooking Reference Cards:** Quick-look lookup tables for safe internal meat temperatures, egg boiling times, and grain-to-water ratios.
+* **Recipe Scaler:** Dynamic calculator to scale ingredient quantities up or down based on desired serving size.
+
+**2. Ingredient Swap Guide**
+
+* **Emergency Substitutions:** Quick lookup for common pantry swaps when missing key ingredients (e.g., buttermilk, eggs, heavy cream).
+* **Dietary Alternatives:** Easy swaps to make dishes dairy-free, gluten-free, or vegan without compromising texture.
+* **Fresh vs. Dried Herbs:** Quick conversion ratios and best practices for substituting dried pantry herbs for fresh ones.
+
+**3. Mastering the Basics**
+
+* **Knife Skills & Prep:** Visual step-by-step guides for basic cuts (dice, julienne, chiffonade) and knife safety.
+* **Flavor Balancing:** Core troubleshooting guide on how to fix a dish using salt, acid, fat, and heat.
+* **Cookware 101:** Guide on selecting, using, and caring for stainless steel, cast iron, and non-stick pans.

@@ -1,10 +1,10 @@
-import AddRecipeNames from "./add-recipe-names";
-import AddRecipeOverview from "./add-recipe-overview";
-import AddRecipeDifficulty from "./add-recipe-difficulty";
+import AddRecipeNames from "./recipe-names";
+import AddRecipeOverview from "./recipe-overview";
+import AddRecipeDifficulty from "./recipe-difficulty";
 
-export default function AddRecipeInfo({ recipeDetails, setRecipeDetails }) {
+export default function RecipeInfo({ recipeDetails, setRecipeDetails }) {
   return (
-    <section className="grid gap-3 rounded-xl border border-slate-100 bg-white p-6 shadow-sm lg:grid-cols-2">
+    <section className="grid gap-3 rounded-xl border border-slate-100 bg-white p-6 shadow-sm lg:grid-cols-2 lg:gap-x-5">
       {/* name and creator */}
       <AddRecipeNames
         recipeDetails={recipeDetails}
@@ -14,7 +14,7 @@ export default function AddRecipeInfo({ recipeDetails, setRecipeDetails }) {
       {/* time and category */}
       <AddRecipeOverview
         recipeDetails={recipeDetails}
-        setRecipeDetails={setRecipeDetails}
+        setRecipeDetails={setRecipeDetails} 
       />
 
       {/* difficulty */}
