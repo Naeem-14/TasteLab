@@ -48,6 +48,7 @@ export default function Browse({ filteredRecipes, setFilteredRecipes }) {
                   {recipe.isFavorite ? favoritesFilled : favorites}
                 </button>
 
+                {/* food and creator name */}
                 <div>
                   <h3 className="line-clamp-1 text-sm font-bold text-slate-800 transition-colors group-hover:text-accent">
                     {recipe.foodName}

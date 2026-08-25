@@ -38,6 +38,7 @@ export default function AddRecipe({ recipes, setRecipes }) {
         setRecipeDetails={setRecipeDetails}
       />
 
+      {/* recipe inputs */}
       <section className="flex h-full scrollbar-none flex-col gap-4 rounded-xl md:overflow-y-scroll lg:col-span-2 lg:gap-6">
         <RecipeInfo
           recipeDetails={recipeDetails}
@@ -50,6 +51,7 @@ export default function AddRecipe({ recipes, setRecipes }) {
         />
       </section>
 
+      {/* add button */}
       <button
         className="col-span-1 flex max-h-11 items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-accent/85 active:scale-[0.98] md:col-span-2 lg:col-span-3"
         type="button"

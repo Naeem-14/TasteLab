@@ -37,6 +37,7 @@ export default function Sidebar() {
           </nav>
         </div>
 
+        {/* My kitchen */}
         <div>
           <p className="mb-2 px-3 text-xs font-semibold tracking-wider text-slate-600 uppercase">
             My Kitchen
@@ -54,7 +55,7 @@ export default function Sidebar() {
           </nav>
         </div>
 
-        {/* Primary Action Button */}
+        {/* Add Recipe Button */}
         <div>
           <a
             href="#"
@@ -66,7 +67,7 @@ export default function Sidebar() {
         </div>
       </section>
 
-      {/* Footer Profile & Logout */}
+      {/* Bottom Section Profile & Logout */}
       <section className="border-t border-slate-200/80 pt-4">
         <div className="flex items-center gap-3 rounded-lg p-2">
           {/* Avatar Icon */}

@@ -1,6 +1,7 @@
 export default function AddRecipeNames({ setRecipeDetails, recipeDetails }) {
   return (
     <div className="flex flex-col gap-3">
+      {/* food name */}
       <div className="flex flex-col gap-1.5">
         <label
           htmlFor="foodName"
@@ -19,6 +20,7 @@ export default function AddRecipeNames({ setRecipeDetails, recipeDetails }) {
         />
       </div>
 
+      {/* creator name */}
       <div className="flex flex-col gap-1.5">
         <label
           htmlFor="creatorName"
