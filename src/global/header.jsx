@@ -1,4 +1,4 @@
-import { menu, logo, user } from "./data/icons";
+import { menu, logo, user } from "../data/icons";
 
 export default function Header() {
   return (

@@ -1,4 +1,4 @@
-import { source, category, difficulty, clock } from "../data/icons";
+import { source, category, difficulty, clock } from "../../data/icons";
 
 const tags = [
   {

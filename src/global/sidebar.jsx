@@ -7,7 +7,7 @@ import {
   user,
   logOut,
   filter,
-} from "./data/icons";
+} from "../data/icons";
 
 export default function Sidebar() {
   return (

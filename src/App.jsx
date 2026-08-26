@@ -1,44 +1,27 @@
-import { useEffect, useState } from "react";
-
-import Header from "./header";
-import Sidebar from "./sidebar";
-import Browse from "./home/browse";
-import SearchAndFilter from "./home/search-and-filter";
-
-import Filter from "./filter/filter";
-
-import AddRecipe from "./add-recipe/add-recipe";
-
+import { useState } from "react";
 import data from "./data/data";
+import Home from "./pages/home";
+import AddRecipe from "./pages/add-recipe";
 
 import "./App.css";
 
 // home page
-// function App() {
-//   const [recipes, setRecipes] = useState(data);
-//   const [filteredRecipes, setFilteredRecipes] = useState(recipes);
+function App() {
+  const [recipes, setRecipes] = useState(data);
+  const [filteredRecipes, setFilteredRecipes] = useState(recipes);
 
-//   useEffect(() => {
-//     setFilteredRecipes(recipes);
-//   }, [recipes]);
-
-  // return (
-    // <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-    //   <Header />
-    //   <Sidebar />
-    //   <main className="col-span-3 flex flex-col bg-bg sm:col-span-2 lg:col-span-3 xl:col-span-4">
-    //     <SearchAndFilter
-    //       recipes={recipes}
-    //       setFilteredRecipes={setFilteredRecipes}
-    //     />
-    //     <Browse
-    //       filteredRecipes={filteredRecipes}
-    //       setFilteredRecipes={setFilteredRecipes}
-    //     />
-    //   </main>
-    // </div>
-  // );
-// }
+  return (
+    <>
+      <Home
+        recipes={recipes}
+        setRecipes={setRecipes}
+        filteredRecipes={filteredRecipes}
+        setFilteredRecipes={setFilteredRecipes}
+      />
+      <AddRecipe recipes={recipes} setRecipes={setRecipes} />
+    </>
+  );
+}
 
 // add recipe page
 // function App() {
@@ -53,12 +36,34 @@ import "./App.css";
 // }
 
 // filter page
-function App() {
-  return (
-    <>
-      <Filter />
-    </>
-  );
-}
+// function App() {
+//   const [recipes, setRecipes] = useState(data);
+//   const [filteredRecipes, setFilteredRecipes] = useState(recipes);
+
+//   useEffect(() => {
+//     setFilteredRecipes(recipes);
+//   }, [recipes]);
+
+//   function addFavorite(indexToFavorite) {
+//     setFilteredRecipes(
+//       filteredRecipes.map((recipe, index) =>
+//         index === indexToFavorite
+//           ? { ...recipe, isFavorite: !recipe.isFavorite }
+//           : recipe,
+//       ),
+//     );
+//   }
+
+//   return (
+//     <>
+//       <Filter
+//         filteredRecipes={filteredRecipes}
+//         setFilteredRecipes={setFilteredRecipes}
+//         recipes={recipes}
+//         addFavorite={addFavorite}
+//       />
+//     </>
+//   );
+// }
 
 export default App;

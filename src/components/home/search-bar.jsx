@@ -1,4 +1,4 @@
-import { search } from "../data/icons";
+import { search } from "../../data/icons";
 
 export default function SearchBar({ recipes, setFilteredRecipes }) {
   function searchRecipes(e) {

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import RecipeImage from "./import-image";
-import RecipeInfo from "./recipe-info";
-import RecipePrep from "./recipe-prep";
+import RecipeImage from "../components/add-recipe/import-image";
+import RecipeInfo from "../components/add-recipe/recipe-info";
+import RecipePrep from "../components/add-recipe/recipe-prep";
 import { add } from "../data/icons";
 
 export default function AddRecipe({ recipes, setRecipes }) {
