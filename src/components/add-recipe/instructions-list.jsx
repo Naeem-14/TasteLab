@@ -20,14 +20,14 @@ export default function InstructionsList({ recipeDetails, setRecipeDetails }) {
           </span>
           <p className="flex-1 leading-relaxed">{instruction}</p>
           <button
-            className="text-slate-400 transition-all hover:text-red-500"
+            className="cursor-pointer text-slate-400 transition-all hover:text-red-500"
             title="Delete step"
             type="button"
             onClick={() => removeInstruction(index)}
           >
             <svg
               className="h-4 w-4"
-              fill="none" 
+              fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
             >

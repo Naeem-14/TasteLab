@@ -17,7 +17,7 @@ export default function TagFilter({ recipes, setFilteredRecipes }) {
       {tags.map((tag) => (
         <button
           key={tag}
-          className={activeTag === tag ? "tags-active-button" : "tags-button"}
+          className={activeTag === tag ? "tags-active-button " : "tags-button"}
           onClick={() => {
             setActiveTag(tag);
             filterRecipes(tag);

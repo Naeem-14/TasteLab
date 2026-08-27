@@ -95,7 +95,7 @@ export default function AddRecipeIngredients({
         </div>
 
         <button
-          className="flex items-center justify-center gap-1.5 rounded-lg border border-dashed border-accent/60 bg-accent/5 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/10 active:scale-[0.99]"
+          className="flex cursor-pointer items-center justify-center gap-1.5 rounded-lg border border-dashed border-accent/60 bg-accent/5 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent/10 active:scale-[0.99]"
           onClick={addIngredientInRecipe}
           type="button"
           disabled={currentIngredient.name.length < 1}

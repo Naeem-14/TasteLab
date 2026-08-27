@@ -14,11 +14,10 @@ function App() {
     <>
       <Home
         recipes={recipes}
-        setRecipes={setRecipes}
         filteredRecipes={filteredRecipes}
         setFilteredRecipes={setFilteredRecipes}
       />
-      <AddRecipe recipes={recipes} setRecipes={setRecipes} />
+      {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
     </>
   );
 }

@@ -32,7 +32,7 @@ export default function AddRecipeInstructions({
         />
 
         <button
-          className="rounded-lg bg-slate-800 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-slate-800/95 active:scale-[0.98]"
+          className="cursor-pointer rounded-lg bg-slate-800 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-slate-800/95 active:scale-[0.98]"
           onClick={addInstructionInRecipe}
           type="button"
           disabled={currentInstruction.length < 1}

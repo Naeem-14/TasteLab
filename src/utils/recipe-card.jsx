@@ -1,8 +1,8 @@
-import { clock, favorites, favoritesFilled } from "../../data/icons";
+import { clock, favorites, favoritesFilled } from "../data/icons";
 
 export default function RecipeCard({ recipe, addFavorite, index }) {
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-slate-300">
+    <article className="group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-slate-300">
       {/* Image Container */}
       <div className="relative aspect-4/3 w-full overflow-hidden bg-slate-100">
         <img
@@ -23,7 +23,7 @@ export default function RecipeCard({ recipe, addFavorite, index }) {
       <div className="relative flex flex-1 flex-col justify-between p-4">
         {/* add favorite */}
         <button
-          className="absolute -top-5 right-1 scale-90 rounded-full bg-bg p-2 text-slate-600 shadow-sm"
+          className="absolute -top-5 right-1 scale-90 cursor-pointer rounded-full bg-bg p-2 text-slate-600 shadow-sm"
           onClick={() => addFavorite(index)}
         >
           {recipe.isFavorite ? favoritesFilled : favorites}

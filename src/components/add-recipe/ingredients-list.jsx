@@ -22,7 +22,7 @@ export default function IngredienstList({ recipeDetails, setRecipeDetails }) {
             {ingredient.name}
           </span>
           <button
-            className="text-slate-400 transition-colors hover:text-red-500"
+            className="cursor-pointer text-slate-400 transition-colors hover:text-red-500"
             title="Remove ingredient"
             type="button"
             onClick={() => removeIngredient(index)}
