@@ -1,25 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SearchBar from "./search-bar";
 import TagFilter from "./tag-filter";
 
 export default function SearchAndFilter({ data, setRecipesToFilter }) {
-  const [search, setSearch] = useState("");
-  const [category, setCategory] = useState("");
+  const [filter, setFilter] = useState({ search: "", category: "" });
 
-  setRecipesToFilter(
-    data.filter(
-      (recipe) =>
-        (recipe.foodName.toLowerCase().includes(search) ||
-          recipe.madeByCreator.toLocaleLowerCase().includes(search)) &&
-        recipe.category.includes(category),
-    ),
-  );
+  useEffect(() => {
+    setRecipesToFilter(
+      data.filter(
+        (recipe) =>
+          (recipe.foodName
+            .toLowerCase()
+            .includes(filter.search.toLowerCase()) ||
+            recipe.madeByCreator
+              .toLocaleLowerCase()
+              .includes(filter.search.toLowerCase())) &&
+          recipe.category.includes(filter.category),
+      ),
+    );
+  }, [filter, data, setRecipesToFilter]);
 
   return (
     <section className="flex flex-col items-center justify-between gap-3 p-4 sm:h-18 sm:flex-row sm:gap-4">
-      <SearchBar setSearch={setSearch} />
+      <SearchBar filter={filter} setFilter={setFilter} />
 
-      <TagFilter setCategory={setCategory} />
+      <TagFilter filter={filter} setFilter={setFilter} />
     </section>
   );
 }

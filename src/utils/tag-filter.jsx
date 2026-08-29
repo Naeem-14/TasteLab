@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function TagFilter({ setCategory }) {
+export default function TagFilter({ filter, setFilter }) {
   const tags = [
     { text: "All", value: "" },
     { text: "Breakfast", value: "Breakfast" },
@@ -21,7 +21,7 @@ export default function TagFilter({ setCategory }) {
           }
           onClick={(e) => {
             setActiveTag(tag.text);
-            setCategory(e.target.value);
+            setFilter({ ...filter, category: e.target.value });
           }}
         >
           {tag.text}
