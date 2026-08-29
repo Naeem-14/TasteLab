@@ -1,4 +1,7 @@
-const data = [
+import own from "./own";
+
+const recipes = [
+  ...own,
   {
     id: "rec-001",
     foodName: "Avocado Toast with Poached Egg",
@@ -11,9 +14,9 @@ const data = [
       "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=1200",
     category: "Breakfast",
     ingredients: [
-      { quantity: 2, unit: "slices", name: "sourdough bread" },
+      { quantity: 2, unit: "slice", name: "sourdough bread" },
       { quantity: 1, unit: "", name: "ripe avocado" },
-      { quantity: 2, unit: "large", name: "eggs" },
+      { quantity: 2, unit: "piece", name: "eggs" },
       { quantity: 1, unit: "tbsp", name: "white vinegar" },
       { quantity: 0.25, unit: "tsp", name: "red pepper flakes" },
       { quantity: 0, unit: "", name: "Salt and black pepper to taste" },
@@ -38,7 +41,7 @@ const data = [
     ingredients: [
       { quantity: 1.5, unit: "lbs", name: "sirloin steak, cut into cubes" },
       { quantity: 3, unit: "tbsp", name: "unsalted butter" },
-      { quantity: 4, unit: "cloves", name: "garlic, minced" },
+      { quantity: 4, unit: "piece", name: "garlic, minced" },
       { quantity: 1, unit: "tbsp", name: "olive oil" },
       { quantity: 1, unit: "tbsp", name: "fresh parsley, chopped" },
       { quantity: 0, unit: "", name: "Salt and cracked pepper" },
@@ -55,7 +58,7 @@ const data = [
     foodName: "Rich Chocolate Lava Cake",
     madeByCreator: "Sarah Jenkins",
     time: 27,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Medium",
     origin: "in-built",
     image:
@@ -199,7 +202,7 @@ const data = [
     foodName: "Fresh Strawberry Mint Mojito Mocktail",
     madeByCreator: "Kenji Takahashi",
     time: 5,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Easy",
     origin: "in-built",
     image:
@@ -225,7 +228,7 @@ const data = [
     foodName: "Crisp French Onion Soup",
     madeByCreator: "Chef Elena Rostova",
     time: 60,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Medium",
     origin: "in-built",
     image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200",
@@ -300,7 +303,7 @@ const data = [
     foodName: "Spicy Creamy Rigatoni Alla Vodka",
     madeByCreator: "Chef Elena Rostova",
     time: 25,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Easy",
     origin: "in-built",
     image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=1200",
@@ -380,7 +383,7 @@ const data = [
     foodName: "Iced Caramel Macchiato",
     madeByCreator: "Kenji Takahashi",
     time: 5,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Easy",
     origin: "in-built",
     image:
@@ -535,7 +538,7 @@ const data = [
     foodName: "Classic Beef Pho",
     madeByCreator: "Kenji Takahashi",
     time: 90,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Hard",
     origin: "in-built",
     image:
@@ -562,7 +565,7 @@ const data = [
     foodName: "Creamy Vanilla Bean Panna Cotta",
     madeByCreator: "Sarah Jenkins",
     time: 20,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Medium",
     origin: "in-built",
     image:
@@ -854,7 +857,7 @@ const data = [
     foodName: "Soft Glazed Cinnamon Rolls",
     madeByCreator: "Sarah Jenkins",
     time: 120,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Hard",
     origin: "in-built",
     image:
@@ -884,7 +887,7 @@ const data = [
     foodName: "Classic Espresso Martini",
     madeByCreator: "Kenji Takahashi",
     time: 5,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Easy",
     origin: "in-built",
     image: "https://images.unsplash.com/photo-1545438102-799c3991ffb2?w=1200",
@@ -910,7 +913,7 @@ const data = [
     foodName: "Pistachio Gelato Sundae",
     madeByCreator: "Sarah Jenkins",
     time: 10,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Easy",
     origin: "in-built",
     image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=1200",
@@ -934,7 +937,7 @@ const data = [
     foodName: "Pan-Seared Salmon with Asparagus",
     madeByCreator: "Chef Elena Rostova",
     time: 20,
-    isFavorite: false,
+    isFavorite: true,
     difficulty: "Medium",
     origin: "in-built",
     image:
@@ -1376,4 +1379,4 @@ const data = [
   },
 ];
 
-export default data;
+export default recipes;

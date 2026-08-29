@@ -1,14 +1,19 @@
-import { search } from "../../data/icons";
+import { search } from "../data/icons";
 
-export default function SearchBar({ recipes, setFilteredRecipes }) {
+export default function SearchBar({ data, setRecipesToSearch }) {
   function searchRecipes(e) {
-    const search = e.target.value;
+    const query = e.target.value;
 
-    setFilteredRecipes(
-      recipes.filter(
+    if (query === "") {
+      setRecipesToSearch(data);
+      return;
+    }
+
+    setRecipesToSearch(
+      data.filter(
         (recipe) =>
-          recipe.foodName.toLowerCase().includes(search) ||
-          recipe.madeByCreator.toLocaleLowerCase().includes(search),
+          recipe.foodName.toLowerCase().includes(query) ||
+          recipe.madeByCreator.toLocaleLowerCase().includes(query),
       ),
     );
   }

@@ -1,4 +1,4 @@
-import RecipeCard from "../home/recipe-card";
+import RecipeCard from "../../utils/recipe-card";
 
 export default function FilterPageBrowse({ filteredRecipes, addFavorite }) {
   return (

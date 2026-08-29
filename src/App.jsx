@@ -2,22 +2,25 @@ import { useState } from "react";
 import data from "./data/data";
 import Home from "./pages/home";
 import AddRecipe from "./pages/add-recipe";
+import OwnRecipes from "./pages/own-recipes";
+import Cooking101 from "./pages/cooking-101";
+import Favorites from "./pages/favorites";
+import Filter from "./pages/filter";
 
 import "./App.css";
 
 // home page
 function App() {
   const [recipes, setRecipes] = useState(data);
-  const [filteredRecipes, setFilteredRecipes] = useState(recipes);
 
   return (
     <>
-      <Home
-        recipes={recipes}
-        filteredRecipes={filteredRecipes}
-        setFilteredRecipes={setFilteredRecipes}
-      />
+      {/* <Home recipes={recipes} setRecipes={setRecipes} /> */}
       {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
+      {/* <OwnRecipes /> */}
+      <Favorites />
+      {/* <Cooking101 /> */}
+      {/* <Filter /> */}
     </>
   );
 }

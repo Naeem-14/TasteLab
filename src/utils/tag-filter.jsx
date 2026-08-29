@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-export default function TagFilter({ recipes, setFilteredRecipes }) {
+export default function TagFilter({ data, setRecipesToFilter }) {
   const tags = ["All", "Breakfast", "Main", "Desserts", "Drinks"];
   const [activeTag, setActiveTag] = useState("All");
 
   function filterRecipes(tag) {
     if (tag === "All") {
-      setFilteredRecipes(recipes);
+      setRecipesToFilter(data);
     } else {
-      setFilteredRecipes(recipes.filter((recipe) => recipe.category === tag));
+      setRecipesToFilter(data.filter((recipe) => recipe.category === tag));
     }
   }
 
@@ -17,7 +17,7 @@ export default function TagFilter({ recipes, setFilteredRecipes }) {
       {tags.map((tag) => (
         <button
           key={tag}
-          className={activeTag === tag ? "tags-active-button " : "tags-button"}
+          className={activeTag === tag ? "tags-active-button" : "tags-button"}
           onClick={() => {
             setActiveTag(tag);
             filterRecipes(tag);

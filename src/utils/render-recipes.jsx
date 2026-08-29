@@ -1,9 +1,9 @@
 import RecipeCard from "./recipe-card";
 
-export default function RenderRecipes({ filteredRecipes, setFilteredRecipes }) {
+export default function RenderRecipes({ recipesToRender, setRecipesToRender }) {
   function addFavorite(indexToFavorite) {
-    setFilteredRecipes(
-      filteredRecipes.map((recipe, index) =>
+    setRecipesToRender(
+      recipesToRender.map((recipe, index) =>
         index === indexToFavorite
           ? { ...recipe, isFavorite: !recipe.isFavorite }
           : recipe,
@@ -13,9 +13,9 @@ export default function RenderRecipes({ filteredRecipes, setFilteredRecipes }) {
 
   return (
     <>
-      {filteredRecipes && filteredRecipes.length > 0 ? (
+      {recipesToRender && recipesToRender.length > 0 ? (
         <div className="mb-8 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {filteredRecipes.map((recipe, index) => (
+          {recipesToRender.map((recipe, index) => (
             <RecipeCard
               recipe={recipe}
               index={index}

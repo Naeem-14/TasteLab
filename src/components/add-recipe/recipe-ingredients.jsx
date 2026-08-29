@@ -70,28 +70,33 @@ export default function AddRecipeIngredients({
           />
 
           {/* Unit Select */}
-          <select
+          {/* Unit Input with Datalist Suggestions */}
+          <input
+            type="text"
+            list="unit-options"
             value={currentIngredient.unit}
-
-            className="col-span-3 cursor-pointer rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-slate-700 transition duration-150 outline-none hover:border-slate-400 focus:border-accent focus:ring-2 focus:ring-accent/20"
-            onChange={(e) => {
+            placeholder="Unit"
+            className="col-span-3 rounded-lg border border-slate-300 px-3 py-2 text-center text-sm text-slate-800 transition duration-150 outline-none placeholder:text-slate-400 hover:border-slate-400 focus:border-accent focus:ring-2 focus:ring-accent/20"
+            onChange={(e) =>
               setCurrentIngredient({
                 ...currentIngredient,
                 unit: e.target.value,
-              });
-            }}
-          >
-            <option value="">none</option>
-            <option value="cup">cup</option>
-            <option value="ml">ml</option>
-            <option value="liter">liter</option>
-            <option value="g">g</option>
-            <option value="kg">kg</option>
-            <option value="tbsp">tbsp</option>
-            <option value="tsp">tsp</option>
-            <option value="piece">piece</option>
-            <option value="slice">slice</option>
-          </select>
+              })
+            }
+          />
+
+          <datalist id="unit-options">
+            <option value="cup" />
+            <option value="ml" />
+            <option value="liter" />
+            <option value="g" />
+            <option value="kg" />
+            <option value="lb" />
+            <option value="tbsp" />
+            <option value="tsp" />
+            <option value="piece" />
+            <option value="slice" />
+          </datalist>
         </div>
 
         <button
