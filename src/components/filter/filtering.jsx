@@ -15,7 +15,7 @@ export default function Filtering({ recipes, setFilteredRecipes }) {
   }
 
   return (
-    <section className="mx-auto grid max-w-7xl grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-3">
+    <section className="mx-auto grid max-w-7xl grid-cols-1 gap-2 p-4 lg:grid-cols-2 lg:gap-3">
       {/* Search Bar */}
       <SearchFilter recipes={recipes} setFilteredRecipes={setFilteredRecipes} />
 

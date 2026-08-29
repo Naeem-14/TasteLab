@@ -1,43 +1,24 @@
 import Header from "../utils/header";
 import Sidebar from "../utils/sidebar";
 import Filtering from "../components/filter/filtering";
-import FilterPageBrowse from "../components/filter/filter-browse";
+import RenderRecipes from "../utils/render-recipes";
+import data from "../data/data";
 
-export default function Filter({
-  recipes,
-  filteredRecipes,
-  setFilteredRecipes,
-  addFavorite,
-}) {
+export default function OwnRecipes({ recipes, setRecipes }) {
   return (
-    <>
-      <div className="grid h-dvh grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-        <Header />
-        <Sidebar />
-        <main className="col-span-3 flex scrollbar-thumb-dark flex-col gap-3 overflow-y-auto bg-bg p-4 sm:col-span-2 lg:col-span-3 xl:col-span-4">
-          <Filtering />
+    <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <Header />
+      <Sidebar />
+      <main className="col-span-3 flex h-[calc(100vh-48px)] scrollbar-none flex-col overflow-y-auto bg-bg sm:col-span-2 lg:col-span-3 xl:col-span-4">
+        <Filtering setRecipesToFilter={setRecipes} data={data} />
 
-          <FilterPageBrowse
-            filteredRecipes={filteredRecipes}
-            addFavorite={addFavorite}
+        <section className="flex-1 px-4 pt-2">
+          <RenderRecipes
+            recipesToRender={recipes}
+            setRecipesToRender={setRecipes}
           />
-        </main>
-      </div>
-    </>
+        </section>
+      </main>
+    </div>
   );
 }
-
-// {
-//   tags.map((tag) => (
-//     <button
-//       key={tag}
-//       className={activeTag === tag ? "tags-active-button" : "tags-button"}
-//       onClick={() => {
-//         setActiveTag(tag);
-//         filterRecipes(tag);
-//       }}
-//     >
-//       {tag}
-//     </button>
-//   ));
-// }

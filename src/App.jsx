@@ -15,12 +15,12 @@ function App() {
 
   return (
     <>
-      {/* <Home recipes={recipes} setRecipes={setRecipes} /> */}
+      <Home recipes={recipes} setRecipes={setRecipes} />
       {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
       {/* <OwnRecipes /> */}
-      <Favorites />
+      {/* <Favorites /> */}
       {/* <Cooking101 /> */}
-      {/* <Filter /> */}
+      {/* <Filter recipes={recipes} setRecipes={setRecipes} /> */}
     </>
   );
 }
