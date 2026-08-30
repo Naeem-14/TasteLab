@@ -1,6 +1,6 @@
 import { useState } from "react";
 import tags from "./filter-page-data";
-import SearchFilter from "./search-filter";
+import SearchFilter from "./filter-page-search";
 
 export default function Filtering({ recipes, setFilteredRecipes }) {
   const [activeTags, setActiveTags] = useState({

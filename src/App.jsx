@@ -18,9 +18,9 @@ function App() {
       {/* <Home recipes={recipes} setRecipes={setRecipes} /> */}
       {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
       {/* <OwnRecipes /> */}
-      <Favorites />
+      {/* <Favorites /> */}
       {/* <Cooking101 /> */}
-      {/* <Filter recipes={recipes} setRecipes={setRecipes} /> */}
+      <Filter recipes={recipes} setRecipes={setRecipes} />
     </>
   );
 }
