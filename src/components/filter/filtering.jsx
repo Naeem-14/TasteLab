@@ -1,14 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import tags from "./filter-page-data";
 import SearchFilter from "./filter-page-search";
+import FilterButtons from "./filter-buttons";
+import filterRecipes from "./filter-recipes";
 
-export default function Filtering({ recipes, setFilteredRecipes }) {
+export default function Filtering({ setRecipesToFilter }) {
   const [activeTags, setActiveTags] = useState({
-    source: "All",
-    category: "All",
-    difficulty: "All",
-    duration: "All",
+    source: "",
+    category: "",
+    difficulty: "",
+    duration: "",
+    search: "",
   });
+
+  useEffect(() => {
+    const filtered = filterRecipes(activeTags);
+    setRecipesToFilter(filtered);
+  }, [activeTags, setRecipesToFilter]);
 
   function toggleButton(categoryKey, selectedButton) {
     setActiveTags({ ...activeTags, [categoryKey]: selectedButton });
@@ -17,7 +25,7 @@ export default function Filtering({ recipes, setFilteredRecipes }) {
   return (
     <section className="mx-auto grid max-w-7xl grid-cols-1 gap-2 p-4 lg:grid-cols-2 lg:gap-3">
       {/* Search Bar */}
-      <SearchFilter recipes={recipes} setFilteredRecipes={setFilteredRecipes} />
+      <SearchFilter activeTags={activeTags} setActiveTags={setActiveTags} />
 
       {tags.map((tag, index) => (
         <div
@@ -28,26 +36,11 @@ export default function Filtering({ recipes, setFilteredRecipes }) {
             <span className="scale-90">{tag.logo}</span>
             <span>{tag.text}</span>
           </div>
-          <div className="flex scrollbar-none items-center gap-1.5 overflow-x-auto rounded-full py-0.5 pr-2">
-            {tag.buttons.map((button, index) => {
-              const isActive =
-                activeTags[tag.text].toLowerCase() === button.toLowerCase();
-
-              return (
-                <button
-                  key={index}
-                  className={
-                    isActive
-                      ? "filter-button-active capitalize"
-                      : "filter-button capitalize"
-                  }
-                  onClick={() => toggleButton(tag.text, button)}
-                >
-                  {button}
-                </button>
-              );
-            })}
-          </div>
+          <FilterButtons
+            tag={tag}
+            toggleButton={toggleButton}
+            activeTags={activeTags}
+          />
         </div>
       ))}
     </section>

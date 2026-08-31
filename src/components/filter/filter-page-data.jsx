@@ -2,25 +2,25 @@ import { source, category, difficulty, clock } from "../../data/icons";
 
 const tags = [
   {
-    logo: source,
     text: "source",
-    buttons: ["all", "featured", "personal", "favorites"],
+    logo: source,
+    buttons: ["", "featured", "personal", "favorites"],
   },
   {
-    logo: category,
     text: "category",
-    buttons: ["all", "breakfast", "main", "desserts", "drinks"],
+    logo: category,
+    buttons: ["", "breakfast", "main", "desserts", "drinks"],
   },
   {
-    logo: difficulty,
     text: "difficulty",
-    buttons: ["all", "easy", "medium", "hard"],
+    logo: difficulty,
+    buttons: ["", "Easy", "Medium", "Hard"],
   },
   {
-    logo: clock,
     text: "duration",
+    logo: clock,
     buttons: [
-      "all",
+      "",
       "under 15 minutes",
       "15-30 minutes",
       "30-45 minutes",

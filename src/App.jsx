@@ -19,8 +19,8 @@ function App() {
       {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
       {/* <OwnRecipes /> */}
       {/* <Favorites /> */}
-      {/* <Cooking101 /> */}
-      <Filter recipes={recipes} setRecipes={setRecipes} />
+      <Cooking101 />
+      {/* <Filter recipes={recipes} setRecipes={setRecipes} /> */}
     </>
   );
 }
