@@ -1,5 +1,6 @@
 import { useState } from "react";
-import IngredientsList from "./ingredients-list";
+
+import IngredientsList from "./IngredientsList";
 
 export default function AddRecipeIngredients({
   recipeDetails,

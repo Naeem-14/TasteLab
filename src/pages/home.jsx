@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-import Header from "../utils/header";
-import Sidebar from "../utils/sidebar";
-import RenderRecipes from "../utils/render-recipes";
-import SearchAndFilter from "../utils/search-and-filter";
+import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
+import RenderRecipes from "../components/RenderRecipes";
+import SearchAndFilter from "../components/SearchAndFilter";
 import data from "../data/data";
 
 export default function Home({ recipes, setRecipes }) {

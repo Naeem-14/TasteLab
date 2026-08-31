@@ -1,4 +1,4 @@
-import { utilities, utensils, pot } from "./icons";
+import { utilities, utensils, pot } from "../../data/icons";
 
 const cooking101Data = [
   {

@@ -1,7 +1,7 @@
-import Header from "../utils/header";
-import Sidebar from "../utils/sidebar";
-import Filtering from "../components/filter/filtering";
-import RenderRecipes from "../utils/render-recipes";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import Filtering from "../features/filter/Filtering";
+import RenderRecipes from "../components/RenderRecipes";
 import data from "../data/data";
 
 export default function OwnRecipes({ recipes, setRecipes }) {

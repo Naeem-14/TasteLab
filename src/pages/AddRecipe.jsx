@@ -1,8 +1,10 @@
 import { useState } from "react";
-import RecipeImage from "../components/add-recipe/import-image";
-import RecipeInfo from "../components/add-recipe/recipe-info";
-import RecipePrep from "../components/add-recipe/recipe-prep";
-import BackButton from "../utils/back-button";
+
+import RecipeImage from "../features/add-recipe/ImportImage";
+import RecipeInfo from "../features/add-recipe/RecipeInfo";
+import RecipePrep from "../features/add-recipe/RecipePrep";
+import BackButton from "../components/BackButton";
+
 import { add } from "../data/icons";
 
 export default function AddRecipe({ recipes, setRecipes }) {

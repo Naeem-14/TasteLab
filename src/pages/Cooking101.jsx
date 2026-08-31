@@ -1,6 +1,6 @@
-import Header from "../utils/header";
-import Sidebar from "../utils/sidebar";
-import RenderPages from "../components/cooking101/render-pages";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import RenderPages from "../features/cooking101/RenderPages";
 
 export default function Cooking101() {
   return (

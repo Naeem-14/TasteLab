@@ -1,5 +1,5 @@
-import AddRecipeIngredients from "./recipe-ingredients";
-import AddRecipeInstructions from "./recipe-instructions";
+import AddRecipeIngredients from "./RecipeIngredients";
+import AddRecipeInstructions from "./RecipeInstructions";
 
 export default function RecipePrep({ recipeDetails, setRecipeDetails }) {
   return (

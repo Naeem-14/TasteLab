@@ -1,5 +1,6 @@
 import { useState } from "react";
-import InstructionsList from "./instructions-list";
+
+import InstructionsList from "./InstructionsList";
 
 export default function AddRecipeInstructions({
   recipeDetails,

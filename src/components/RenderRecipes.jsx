@@ -1,4 +1,4 @@
-import RecipeCard from "./recipe-card";
+import RecipeCard from "./RecipeCard";
 
 export default function RenderRecipes({ recipesToRender, setRecipesToRender }) {
   function addFavorite(indexToFavorite) {

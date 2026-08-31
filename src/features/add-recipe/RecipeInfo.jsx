@@ -1,6 +1,6 @@
-import AddRecipeNames from "./recipe-names";
-import AddRecipeOverview from "./recipe-overview";
-import AddRecipeDifficulty from "./recipe-difficulty";
+import AddRecipeNames from "./RecipeNames";
+import AddRecipeOverview from "./RecipeOverview";
+import AddRecipeDifficulty from "./RecipeDifficulty";
 
 export default function RecipeInfo({ recipeDetails, setRecipeDetails }) {
   return (
@@ -14,7 +14,7 @@ export default function RecipeInfo({ recipeDetails, setRecipeDetails }) {
       {/* time and category */}
       <AddRecipeOverview
         recipeDetails={recipeDetails}
-        setRecipeDetails={setRecipeDetails} 
+        setRecipeDetails={setRecipeDetails}
       />
 
       {/* difficulty */}

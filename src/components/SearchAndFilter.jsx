@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import SearchBar from "./search-bar";
-import TagFilter from "./tag-filter";
+
+import SearchBar from "./SearchBar";
+import TagFilter from "./TagFilter";
 
 export default function SearchAndFilter({ data, setRecipesToFilter }) {
   const [filter, setFilter] = useState({ search: "", category: "" });

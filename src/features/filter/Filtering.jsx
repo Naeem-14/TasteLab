@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import tags from "./filter-page-data";
-import SearchFilter from "./filter-page-search";
-import FilterButtons from "./filter-buttons";
-import filterRecipes from "./filter-recipes";
+
+import tags from "./FilterPageData";
+import SearchFilter from "./FilterPageSearch";
+import FilterButtons from "./FilterButtons";
+import filterRecipes from "./FilterRecipes";
 
 export default function Filtering({ setRecipesToFilter }) {
   const [activeTags, setActiveTags] = useState({

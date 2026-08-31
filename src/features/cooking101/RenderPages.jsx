@@ -1,5 +1,5 @@
-import PageCard from "./page-card";
-import cooking101Data from "../../data/cooking-101-data";
+import PageCard from "./PageCard";
+import cooking101Data from "./cooking-101-data";
 
 export default function RenderPages() {
   return (

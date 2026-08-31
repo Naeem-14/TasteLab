@@ -1,11 +1,12 @@
 import { useState } from "react";
+
 import data from "./data/data";
-import Home from "./pages/home";
-import AddRecipe from "./pages/add-recipe";
-import OwnRecipes from "./pages/own-recipes";
-import Cooking101 from "./pages/cooking-101";
-import Favorites from "./pages/favorites";
-import Filter from "./pages/filter";
+import Home from "./pages/Home";
+import AddRecipe from "./pages/AddRecipe";
+import OwnRecipes from "./pages/OwnRecipes";
+import Cooking101 from "./pages/Cooking101";
+import Favorites from "./pages/Favorites";
+import Filter from "./pages/Filter";
 
 import "./App.css";
 
@@ -16,11 +17,11 @@ function App() {
   return (
     <>
       {/* <Home recipes={recipes} setRecipes={setRecipes} /> */}
-      {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
+      {/* <Filter recipes={recipes} setRecipes={setRecipes} /> */}
+      {/* <Cooking101 /> */}
       {/* <OwnRecipes /> */}
       {/* <Favorites /> */}
-      <Cooking101 />
-      {/* <Filter recipes={recipes} setRecipes={setRecipes} /> */}
+      {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
     </>
   );
 }
