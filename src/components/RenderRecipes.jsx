@@ -14,7 +14,7 @@ export default function RenderRecipes({ recipesToRender, setRecipesToRender }) {
   return (
     <>
       {recipesToRender && recipesToRender.length > 0 ? (
-        <div className="mb-8 grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mb-8 grid grid-cols-1 gap-5 min-[480px]:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {recipesToRender.map((recipe, index) => (
             <RecipeCard
               recipe={recipe}

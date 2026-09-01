@@ -65,3 +65,7 @@ input[type="text"] {
 .filter-button-active {
   @apply shrink-0 rounded-full bg-slate-900 px-3.5 py-1.5 text-xs font-medium whitespace-nowrap text-white shadow-xs transition-colors hover:bg-slate-800;
 }
+
+.login-form-button {
+  @apply flex h-11 w-11 items-center justify-center rounded-xl hover:text-white  text-sm text-slate-800 transition-all duration-300;
+}

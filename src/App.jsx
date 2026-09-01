@@ -7,6 +7,7 @@ import OwnRecipes from "./pages/OwnRecipes";
 import Cooking101 from "./pages/Cooking101";
 import Favorites from "./pages/Favorites";
 import Filter from "./pages/Filter";
+import Login from "./pages/Login";
 
 import "./App.css";
 
@@ -18,10 +19,11 @@ function App() {
     <>
       {/* <Home recipes={recipes} setRecipes={setRecipes} /> */}
       {/* <Filter recipes={recipes} setRecipes={setRecipes} /> */}
-      {/* <Cooking101 /> */}
+      {/* <Cooking101 />  */}
       {/* <OwnRecipes /> */}
       {/* <Favorites /> */}
       {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
+      <Login />
     </>
   );
 }

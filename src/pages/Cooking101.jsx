@@ -13,16 +13,3 @@ export default function Cooking101() {
     </div>
   );
 }
-
-// ├── 🧮 Utilities
-// │   ├── Temperature ($^\circ\text{F} \leftrightarrow ^\circ\text{C}$)
-// │   ├── Weight (g ↔ oz)
-// │   └── Volume (ml ↔ cups ↔ tbsp/tsp)
-// ├── 🔪 Culinary Skills
-// │   ├── Knife Skills & Cuts (Visual cards)
-// │   ├── Food Safety & Prep (Internal temps & thawing)
-// │   └── Seasoning & Flavor Balancing (Troubleshooting guide)
-// └── 🍳 Equipment & Basics
-//     ├── Cookware & Oil Smoke Points (Table)
-//     ├── Pantry Staples Guide (Basic stuff every kitchen should have)
-//     └── Basic Sauces (Mother sauces & quick ratios)
