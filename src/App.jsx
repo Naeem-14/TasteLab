@@ -8,22 +8,43 @@ import Cooking101 from "./pages/Cooking101";
 import Favorites from "./pages/Favorites";
 import Filter from "./pages/Filter";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import TemperatureConvertor from "./features/cooking101/cooking101Pages/temeperature";
 
 import "./App.css";
 
 // home page
 function App() {
   const [recipes, setRecipes] = useState(data);
+  const [user, setUser] = useState({
+    userName: "naeem",
+    email: "naeem@gmail.com",
+    password: "",
+  });
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <>
-      {/* <Home recipes={recipes} setRecipes={setRecipes} /> */}
-      {/* <Filter recipes={recipes} setRecipes={setRecipes} /> */}
-      {/* <Cooking101 />  */}
-      {/* <OwnRecipes /> */}
-      {/* <Favorites /> */}
+      {/* <Home
+        recipes={recipes}
+        setRecipes={setRecipes}
+        user={user}
+        isLoggedIn={isLoggedIn}
+      /> */}
+      {/* <Filter
+        recipes={recipes}
+        setRecipes={setRecipes}
+        user={user}
+        isLoggedIn={isLoggedIn}
+      /> */}
+      {/* <Cooking101 user={user} isLoggedIn={isLoggedIn} /> */}
+      {/* <OwnRecipes user={user} isLoggedIn={isLoggedIn}/> */}
+      {/* <Favorites user={user} isLoggedIn={isLoggedIn}/> */}
       {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
-      <Login />
+      {/* <Login /> */}
+      {/* <SignUp user={user} setUser={setUser} setIsLoggedIn={setIsLoggedIn} /> */}
+
+      <TemperatureConvertor />
     </>
   );
 }

@@ -1,6 +1,6 @@
-import { menu, logo, user } from "../data/icons";
+import { menu, logo, pfp } from "../data/icons";
 
-export default function Header() {
+export default function Header({ isLoggedIn, user }) {
   return (
     <header className="col-span-3 flex h-12 w-full items-center bg-dark px-4 text-light lg:col-span-4 xl:col-span-5">
       {/* menu */}
@@ -22,10 +22,10 @@ export default function Header() {
           className="flex cursor-pointer items-center gap-4 rounded-full border border-emerald-800/80 bg-emerald-900/40 py-1 pr-3 pl-1 transition-colors hover:border-emerald-700 hover:bg-emerald-900/70"
         >
           <div className="-mr-2 flex h-6 w-6 items-center justify-center rounded-full text-accent">
-            {user}
+            {pfp}
           </div>
           <span className="hidden font-light text-slate-200 sm:inline">
-            User
+            {isLoggedIn ? user.userName : "guest"}
           </span>
         </button>
       </div>

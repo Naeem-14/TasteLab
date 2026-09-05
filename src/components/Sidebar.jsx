@@ -1,15 +1,7 @@
-import {
-  home,
-  cooking101,
-  own,
-  favorites,
-  add,
-  user,
-  logOut,
-  filter,
-} from "../data/icons";
+import { home, cooking101, own, favorites, add, filter } from "../data/icons";
+import SidebarBottom from "./SideBarBottom";
 
-export default function Sidebar() {
+export default function Sidebar({ isLoggedIn, user }) {
   return (
     <aside className="col-span-1 hidden h-[calc(100vh-48px)] flex-col justify-between bg-light px-4 py-6 text-slate-400 sm:flex">
       {/* Navigation Sections */}
@@ -68,30 +60,7 @@ export default function Sidebar() {
       </section>
 
       {/* Bottom Section Profile & Logout */}
-      <section className="border-t border-slate-200/80 pt-4">
-        <div className="flex items-center gap-3 rounded-lg p-2">
-          {/* Avatar Icon */}
-          <div className="flex shrink-0 scale-125 items-center justify-center">
-            {user}
-          </div>
-
-          {/* User Details */}
-          <div className="min-w-0 flex-1">
-            <p className="truncate text-sm font-semibold text-slate-800">
-              User
-            </p>
-            <p className="truncate text-xs text-slate-400">User@gmail.com</p>
-          </div>
-
-          {/* Logout Button */}
-          <button
-            title="Log Out"
-            className="cursor-pointer rounded-md p-1.5 text-slate-400 transition-colors hover:bg-rose-50 hover:text-rose-600"
-          >
-            {logOut}
-          </button>
-        </div>
-      </section>
+      <SidebarBottom isLoggedIn={isLoggedIn} user={user} />
     </aside>
   );
 }

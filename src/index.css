@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import "tailwindcss";
 
@@ -7,10 +8,9 @@
   --color-dark: hsl(190, 22%, 7%);
   --color-light: white;
   --color-bg: #eaeff4;
-  --color-light-gray: ;
-  --color-dark-gray: ;
   --font-serif: "roboto";
   --font-sans: "playfair display";
+  --font-tall:"Barlow Condensed";
   --breakpoint-xs: 350px;
 }
 
@@ -67,5 +67,5 @@ input[type="text"] {
 }
 
 .login-form-button {
-  @apply flex h-11 w-11 items-center justify-center rounded-xl hover:text-white  text-sm text-slate-800 transition-all duration-300;
+  @apply flex h-11 w-11 items-center justify-center rounded-xl text-sm text-slate-800 transition-all duration-300 hover:text-white;
 }

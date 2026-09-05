@@ -4,11 +4,11 @@ import Filtering from "../features/filter/Filtering";
 import RenderRecipes from "../components/RenderRecipes";
 import data from "../data/data";
 
-export default function OwnRecipes({ recipes, setRecipes }) {
+export default function OwnRecipes({ recipes, setRecipes, user, isLoggedIn }) {
   return (
     <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      <Header />
-      <Sidebar />
+      <Header user={user} isLoggedIn={isLoggedIn} />
+      <Sidebar user={user} isLoggedIn={isLoggedIn} />
       <main className="col-span-3 flex h-[calc(100vh-48px)] scrollbar-none flex-col overflow-y-auto bg-bg sm:col-span-2 lg:col-span-3 xl:col-span-4">
         <Filtering setRecipesToFilter={setRecipes} data={data} />
 
