@@ -10,6 +10,8 @@ import Filter from "./pages/Filter";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import TemperatureConvertor from "./features/cooking101/cooking101Pages/temeperature";
+import Recipe from "./features/recipe/Recipe.jsx";
+import BasicSauces from "./features/cooking101/cooking101Pages/BasicSauces.jsx";
 
 import "./App.css";
 
@@ -44,7 +46,9 @@ function App() {
       {/* <Login /> */}
       {/* <SignUp user={user} setUser={setUser} setIsLoggedIn={setIsLoggedIn} /> */}
 
-      <TemperatureConvertor />
+      {/* <TemperatureConvertor /> */}
+      <BasicSauces />
+      {/* <Recipe /> */}
     </>
   );
 }
