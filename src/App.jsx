@@ -17,6 +17,9 @@ import FoodSafetyAndPrep from "./features/cooking101/pages/food-safety/FoodSafet
 import FlavorBalancing from "./features/cooking101/pages/flavor-balancing/FlavorBalancing.jsx";
 import SmokePoints from "./features/cooking101/pages/smoke-point/SmokePoint.jsx";
 import PantryStaples from "./features/cooking101/pages/pantry-staples/PantryStaple.jsx";
+import { Routes, Route } from "react-router";
+import VolumeConverter from "./features/cooking101/pages/volume-converter/VolumeConverter.jsx";
+import WeightConverter from "./features/cooking101/pages/weight-converter/WeightConverter.jsx";
 
 import "./App.css";
 
@@ -28,82 +31,92 @@ function App() {
     email: "naeem@gmail.com",
     password: "",
   });
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <>
-      {/* <Home
-        recipes={recipes}
-        setRecipes={setRecipes}
-        user={user}
-        isLoggedIn={isLoggedIn}
-      /> */}
-      {/* <Filter
-        recipes={recipes}
-        setRecipes={setRecipes}
-        user={user}
-        isLoggedIn={isLoggedIn}
-      /> */}
-      <Cooking101 user={user} isLoggedIn={isLoggedIn} />
-      {/* <OwnRecipes user={user} isLoggedIn={isLoggedIn}/> */}
-      {/* <Favorites user={user} isLoggedIn={isLoggedIn}/> */}
-      {/* <AddRecipe recipes={recipes} setRecipes={setRecipes} /> */}
-      {/* <Login /> */}
-      {/* <SignUp user={user} setUser={setUser} setIsLoggedIn={setIsLoggedIn} /> */}
-
-      {/* <TemperatureConvertor /> */}
-      {/* <BasicSauces /> */}
-      {/* <KnifeSkills /> */}
-      {/* <FoodSafetyAndPrep /> */}
-      {/* <FlavorBalancing /> */}
-      {/* <SmokePoints /> */}
-      {/* <PantryStaples /> */}
       {/* <Recipe /> */}
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              recipes={recipes}
+              setRecipes={setRecipes}
+              user={user}
+              isLoggedIn={isLoggedIn}
+            />
+          }
+        />
+
+        <Route
+          path="/filter"
+          element={
+            <Filter
+              recipes={recipes}
+              setRecipes={setRecipes}
+              user={user}
+              isLoggedIn={isLoggedIn}
+            />
+          }
+        />
+
+        <Route
+          path="/cooking101"
+          element={<Cooking101 user={user} isLoggedIn={isLoggedIn} />}
+        />
+
+        <Route
+          path="/own-recipes"
+          element={<OwnRecipes user={user} isLoggedIn={isLoggedIn} />}
+        />
+
+        <Route
+          path="/favorites"
+          element={<Favorites user={user} isLoggedIn={isLoggedIn} />}
+        />
+
+        <Route
+          path="/add-recipe"
+          element={<AddRecipe recipes={recipes} setRecipes={setRecipes} />}
+        />
+
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/sign-up"
+          element={
+            <SignUp
+              user={user}
+              setUser={setUser}
+              setIsLoggedIn={setIsLoggedIn}
+            />
+          }
+        />
+
+        <Route
+          path="/temperature-converter"
+          element={<TemperatureConvertor />}
+        />
+
+        <Route path="/volume-converter" element={<VolumeConverter />} />
+
+        <Route path="/weight-converter" element={<WeightConverter />} />
+
+        <Route path="/knife-skills-and-cuts" element={<KnifeSkills />} />
+
+        <Route path="/food-safety-and-prep" element={<FoodSafetyAndPrep />} />
+
+        <Route path="/flavor-balancing" element={<FlavorBalancing />} />
+
+        <Route path="/smoke-points" element={<SmokePoints />} />
+
+        <Route path="/pantry-staples-guide" element={<PantryStaples />} />
+
+        <Route path="/basic-sauces" element={<BasicSauces />} />
+      </Routes>
     </>
   );
 }
-
-// add recipe page
-// function App() {
-//   const [recipes, setRecipes] = useState(data);
-//   const [filteredRecipes, setFilteredRecipes] = useState(recipes);
-
-//   return (
-//     <>
-//       <AddRecipe recipes={recipes} setRecipes={setRecipes} />
-//     </>
-//   );
-// }
-
-// filter page
-// function App() {
-//   const [recipes, setRecipes] = useState(data);
-//   const [filteredRecipes, setFilteredRecipes] = useState(recipes);
-
-//   useEffect(() => {
-//     setFilteredRecipes(recipes);
-//   }, [recipes]);
-
-//   function addFavorite(indexToFavorite) {
-//     setFilteredRecipes(
-//       filteredRecipes.map((recipe, index) =>
-//         index === indexToFavorite
-//           ? { ...recipe, isFavorite: !recipe.isFavorite }
-//           : recipe,
-//       ),
-//     );
-//   }
-
-//   return (
-//     <>
-//       <Filter
-//         filteredRecipes={filteredRecipes}
-//         setFilteredRecipes={setFilteredRecipes}
-//         recipes={recipes}
-//         addFavorite={addFavorite}
-//       />
-//     </>
-//   );
-// }
 
 export default App;

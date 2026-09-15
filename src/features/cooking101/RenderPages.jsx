@@ -21,7 +21,7 @@ export default function RenderPages() {
                 image={card.image}
                 title={card.title}
                 description={card.description}
-                accent={card.accent}
+                path={card.path}
               />
             ))}
           </div>

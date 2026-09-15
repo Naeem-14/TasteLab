@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
 
@@ -10,7 +10,7 @@
   --color-bg: #eaeff4;
   --font-serif: "roboto";
   --font-sans: "playfair display";
-  --font-tall:"Barlow Condensed";
+  --font-tall: "Barlow Condensed";
   --breakpoint-xs: 350px;
 }
 
@@ -20,14 +20,6 @@ body {
 
 aside svg {
   @apply h-4 w-4;
-}
-
-.sidebar-tab {
-  @apply flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors hover:bg-slate-200/60 hover:text-slate-500;
-}
-
-.sidebar-active-tab {
-  @apply flex items-center gap-3 rounded-lg bg-accent/20 px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors;
 }
 
 .tags-button {

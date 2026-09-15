@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BackButton from "../../../../components/BackButton";
-import ConverterButtons from "./ConverterButtons";
+import ConverterButtons from "./tempConvdata";
 
 export default function TemperatureConvertor() {
   const [input, setInput] = useState({ value: "0", unit: "celcius" });
@@ -8,7 +8,7 @@ export default function TemperatureConvertor() {
 
   return (
     <main className="grid h-screen grid-rows-3 md:grid-rows-4 lg:grid-cols-5 lg:grid-rows-1">
-      <BackButton />
+      <BackButton path="/cooking101" />
       <section className="grid md:grid-cols-2 lg:order-2 lg:col-span-2 lg:grid-cols-1">
         {/* input section */}
         <div className="flex items-center justify-between gap-7 bg-accent px-8 text-dark lg:flex-col-reverse lg:justify-center lg:gap-5">

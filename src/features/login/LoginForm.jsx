@@ -11,8 +11,8 @@ export default function LoginForm() {
   return (
     <div className="flex flex-col gap-4">
       <div className="mb-4 flex flex-col items-center gap-1">
-        <h2 className="text-4xl font-bold">Welcome back, Chef!</h2>
-        <p className="text-slate-500">
+        <h2 className="text-center text-4xl font-bold">Welcome back, Chef!</h2>
+        <p className="text-center text-slate-500">
           Your personal cookbook is waiting for you.
         </p>
       </div>

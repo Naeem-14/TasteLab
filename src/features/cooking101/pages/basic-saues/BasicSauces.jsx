@@ -4,10 +4,10 @@ import RecipeInstrutions from "../../../recipe/RecipeInstructions";
 import BackButton from "../../../../components/BackButton";
 import PagesHeader from "../PagesHeader";
 
-export default function KnifeSkills() {
+export default function BasicSauces() {
   return (
     <main className="mx-auto p-4 md:p-8">
-      <BackButton />
+      <BackButton path="/cooking101" />
 
       <PagesHeader
         category="Equipment & Basics"

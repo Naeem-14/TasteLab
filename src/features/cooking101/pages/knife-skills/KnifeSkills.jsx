@@ -6,7 +6,7 @@ import PagesHeader from "../PagesHeader";
 export default function KnifeSkills() {
   return (
     <main className="p-4 md:p-8">
-      <BackButton />
+      <BackButton path="/cooking101" />
 
       <PagesHeader
         category="Culinary Skills"

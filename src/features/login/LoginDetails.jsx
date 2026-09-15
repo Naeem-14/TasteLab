@@ -1,5 +1,6 @@
 import { logo } from "../../data/icons";
 import LoginForm from "./LoginForm";
+import { Link } from "react-router";
 
 export default function LoginDetails() {
   return (
@@ -17,9 +18,12 @@ export default function LoginDetails() {
       {/* sign up */}
       <div>
         Don't have an account?{" "}
-        <span className="cursor-pointer font-semibold text-accent transition hover:text-accent/75">
+        <Link
+          to="/sign-up"
+          className="cursor-pointer font-semibold text-accent transition hover:text-accent/75"
+        >
           Sign up
-        </span>
+        </Link>
       </div>
     </section>
   );

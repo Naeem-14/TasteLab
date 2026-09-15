@@ -1,8 +1,13 @@
-export default function PageCard({ image, title, description }) {
+import { Link } from "react-router";
+
+export default function PageCard({ image, title, description, path }) {
   const imageUrl = new URL(image, import.meta.url).href;
 
   return (
-    <article className="group relative aspect-square h-full cursor-pointer overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-slate-300">
+    <Link
+      to={path}
+      className="group relative aspect-square h-full cursor-pointer overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-slate-300"
+    >
       <img
         src={imageUrl}
         alt={title}
@@ -20,6 +25,6 @@ export default function PageCard({ image, title, description }) {
           {description}
         </p>
       </div>
-    </article>
+    </Link>
   );
 }

@@ -1,5 +1,6 @@
 import { logo } from "../../data/icons";
 import SignUpForm from "./SignUpForm";
+import { Link } from "react-router";
 
 export default function SignUpDetails({ user, setUser, setIsLoggedIn }) {
   return (
@@ -17,12 +18,13 @@ export default function SignUpDetails({ user, setUser, setIsLoggedIn }) {
       {/* sign up */}
       <div>
         Already have an account?{" "}
-        <span
+        <Link
+          to="/login"
           className="cursor-pointer font-semibold text-accent transition hover:text-accent/75"
           onClick={() => setIsLoggedIn(true)}
         >
           Log in
-        </span>
+        </Link>
       </div>
     </section>
   );

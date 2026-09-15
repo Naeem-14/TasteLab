@@ -31,7 +31,7 @@ export default function FoodSafetyAndPrep() {
 
   return (
     <main className="mx-auto max-w-7xl space-y-12 p-4 md:p-8">
-      <BackButton />
+      <BackButton path="/cooking101" />
       {/* Header */}
       <PagesHeader
         category="Culinary Skills"

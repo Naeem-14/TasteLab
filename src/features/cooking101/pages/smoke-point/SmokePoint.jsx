@@ -20,7 +20,7 @@ export default function SmokePoints() {
 
   return (
     <main className="space-y-12 p-4 md:p-8">
-      <BackButton />
+      <BackButton path="/cooking101" />
       {/* Page Header */}
       <PagesHeader
         category="Equipment & Basicss"

@@ -1,7 +1,14 @@
 import { home, cooking101, own, favorites, add, filter } from "../data/icons";
 import SidebarBottom from "./SideBarBottom";
+import { NavLink } from "react-router";
 
 export default function Sidebar({ isLoggedIn, user }) {
+  function linkStyle({ isActive }) {
+    return isActive
+      ? "flex items-center gap-3 rounded-lg bg-accent/20 px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors"
+      : "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors hover:bg-slate-200/60 hover:text-slate-500";
+  }
+
   return (
     <aside className="col-span-1 hidden h-[calc(100vh-48px)] flex-col justify-between bg-light px-4 py-6 text-slate-400 sm:flex">
       {/* Navigation Sections */}
@@ -12,20 +19,20 @@ export default function Sidebar({ isLoggedIn, user }) {
             Menu
           </p>
           <nav className="space-y-1">
-            <a href="#" className="sidebar-active-tab">
+            <NavLink to="/" className={linkStyle}>
               {home}
               <span>Home</span>
-            </a>
+            </NavLink>
 
-            <a href="#" className="sidebar-tab">
+            <NavLink to="/filter" className={linkStyle}>
               {filter}
               <span>Filter</span>
-            </a>
+            </NavLink>
 
-            <a href="#" className="sidebar-tab">
+            <NavLink to="/cooking101" className={linkStyle}>
               {cooking101}
               <span>Cooking 101</span>
-            </a>
+            </NavLink>
           </nav>
         </div>
 
@@ -35,27 +42,27 @@ export default function Sidebar({ isLoggedIn, user }) {
             My Kitchen
           </p>
           <nav className="space-y-1">
-            <a href="#" className="sidebar-tab">
+            <NavLink to="/own-recipes" className={linkStyle}>
               {own}
               <span>Own Recipes</span>
-            </a>
+            </NavLink>
 
-            <a href="#" className="sidebar-tab">
+            <NavLink to="/favorites" className={linkStyle}>
               {favorites}
               <span>Favorites</span>
-            </a>
+            </NavLink>
           </nav>
         </div>
 
         {/* Add Recipe Button */}
         <div>
-          <a
-            href="#"
+          <NavLink
+            to="/add-recipe"
             className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-accent/85 active:scale-[0.98]"
           >
             {add}
             <span>Add Recipe</span>
-          </a>
+          </NavLink>
         </div>
       </section>
 

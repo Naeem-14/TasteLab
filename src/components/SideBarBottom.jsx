@@ -1,4 +1,5 @@
 import { pfp, logOut } from "../data/icons";
+import { Link } from "react-router";
 
 export default function SidebarBottom({ isLoggedIn, user }) {
   return (
@@ -32,20 +33,22 @@ export default function SidebarBottom({ isLoggedIn, user }) {
       ) : (
         <div className="flex items-center gap-2">
           {/* Primary Action */}
-          <button
+          <Link
+            to="/sign-up"
             type="button"
             className="flex-1 cursor-pointer rounded-lg bg-accent px-3 py-2 text-center text-sm font-semibold text-white shadow-xs transition-all hover:bg-accent/85 active:scale-[0.98]"
           >
             Sign Up
-          </button>
+          </Link>
 
           {/* Secondary Action */}
-          <button
+          <Link
+            to="login"
             type="button"
             className="flex-1 cursor-pointer rounded-lg border border-slate-200 bg-slate-200 px-3 py-2 text-center text-sm font-semibold text-slate-700 shadow-2xs transition-all hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 active:scale-[0.98]"
           >
             Log In
-          </button>
+          </Link>
         </div>
       )}
     </section>
