@@ -27,3 +27,5 @@ export default function Home({ recipes, setRecipes, isLoggedIn, user }) {
     </div>
   );
 }
+
+

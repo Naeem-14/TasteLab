@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import data from "./data/data";
-import Home from "./pages/Home";
+import Home from "./pages/HomeFix.jsx";
 import AddRecipe from "./pages/AddRecipe";
 import OwnRecipes from "./pages/OwnRecipes";
 import Cooking101 from "./pages/Cooking101";
