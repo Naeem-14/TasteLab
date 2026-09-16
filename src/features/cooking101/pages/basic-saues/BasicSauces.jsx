@@ -7,7 +7,7 @@ import PagesHeader from "../PagesHeader";
 export default function BasicSauces() {
   return (
     <main className="mx-auto p-4 md:p-8">
-      <BackButton path="/cooking101" />
+      <BackButton />
 
       <PagesHeader
         category="Equipment & Basics"

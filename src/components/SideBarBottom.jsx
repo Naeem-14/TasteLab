@@ -43,7 +43,7 @@ export default function SidebarBottom({ isLoggedIn, user }) {
 
           {/* Secondary Action */}
           <Link
-            to="login"
+            to="/login"
             type="button"
             className="flex-1 cursor-pointer rounded-lg border border-slate-200 bg-slate-200 px-3 py-2 text-center text-sm font-semibold text-slate-700 shadow-2xs transition-all hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 active:scale-[0.98]"
           >

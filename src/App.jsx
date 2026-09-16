@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router";
 
 import data from "./data/data";
+
 import Home from "./pages/Home.jsx";
 import AddRecipe from "./pages/AddRecipe";
 import OwnRecipes from "./pages/OwnRecipes";
@@ -9,17 +11,18 @@ import Favorites from "./pages/Favorites.jsx";
 import Filter from "./pages/Filter.jsx";
 import Login from "./pages/Login.jsx";
 import SignUp from "./pages/SignUp";
+
 import TemperatureConvertor from "./features/cooking101/pages/temperature-converter/TemeperatureConverter.jsx";
-import Recipe from "./features/recipe/Recipe.jsx";
+import VolumeConverter from "./features/cooking101/pages/volume-converter/VolumeConverter.jsx";
+import WeightConverter from "./features/cooking101/pages/weight-converter/WeightConverter.jsx";
 import BasicSauces from "./features/cooking101/pages/basic-saues/BasicSauces.jsx";
 import KnifeSkills from "./features/cooking101/pages/knife-skills/KnifeSkills.jsx";
 import FoodSafetyAndPrep from "./features/cooking101/pages/food-safety/FoodSafety.jsx";
 import FlavorBalancing from "./features/cooking101/pages/flavor-balancing/FlavorBalancing.jsx";
 import SmokePoints from "./features/cooking101/pages/smoke-point/SmokePoint.jsx";
 import PantryStaples from "./features/cooking101/pages/pantry-staples/PantryStaple.jsx";
-import { Routes, Route } from "react-router";
-import VolumeConverter from "./features/cooking101/pages/volume-converter/VolumeConverter.jsx";
-import WeightConverter from "./features/cooking101/pages/weight-converter/WeightConverter.jsx";
+
+import Recipe from "./features/recipe/Recipe.jsx";
 
 import "./App.css";
 

@@ -24,7 +24,7 @@ export default function WeightConverter() {
 
   return (
     <main className="grid h-screen grid-rows-3 md:grid-rows-4 lg:grid-cols-5 lg:grid-rows-1">
-      <BackButton path="/cooking101" />
+      <BackButton />
       <section className="grid md:grid-cols-2 lg:order-2 lg:col-span-2 lg:grid-cols-1">
         {/* Input Section */}
         <div className="flex items-center justify-between gap-7 bg-accent px-8 text-dark lg:flex-col-reverse lg:justify-center lg:gap-5">

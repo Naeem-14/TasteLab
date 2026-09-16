@@ -14,7 +14,7 @@ export default function FlavorBalancing() {
 
   return (
     <main className="space-y-12 p-4 md:p-8">
-      <BackButton path="/cooking101" />
+      <BackButton />
       {/* Page Header */}
       <PagesHeader
         category="Culinary Skills"
